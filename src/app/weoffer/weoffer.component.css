@@ -35,12 +35,13 @@ body {
 }
 .offer_landlord{
 	display: flex;
-	flex-direction: row;
 	margin:40px 0;
 	max-width: 1600px;
 	min-width: 320px;
 	width: 100%;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
 
 }
 .offer_landlord_block{
@@ -52,12 +53,7 @@ body {
 	
 }
 @media (max-width: 1200px) {
-	.offer_landlord{
-	flex-wrap: wrap;
-
-}
-.offer_landlord_block{
-	margin: 20px 15px;
-
+	.offer_landlord_block{
+		margin: 20px 15px;
 }
 }
