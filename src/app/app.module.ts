@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -15,11 +16,22 @@ import { FooterModule } from './footer/footer.module';
 import { WeofferModule } from './weoffer/weoffer.module';
 import { PopularModule } from './popular/popular.module';
 
+
+import { RoutingModule } from './routing/routing.module';
+import { RouterModule } from '@angular/router';
+
+//popup
+import { ModalModule } from 'angular2-modal';
+import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
+// import { CustomModal } from './header/custom-modal-sample';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SocialLinksComponent,
+    // CustomModal,
     UserBlockComponent,
     RegistrationBlockComponent,
     NavigationComponent,
@@ -29,9 +41,22 @@ import { PopularModule } from './popular/popular.module';
     BrowserModule,
     FooterModule,
     WeofferModule,
-    PopularModule
+    PopularModule,
+    RoutingModule,
+    ModalModule.forRoot(),
+    // RouterModule.forRoot([
+    // {
+    //   path: 'registration',
+    //   component: RegistrationBlockComponent
+    // },
+    // {
+    //   path: '',
+    //   component: FilterComponent
+    // }
+    // ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  // entryComponents: [ CustomModal ]
 })
 export class AppModule { }

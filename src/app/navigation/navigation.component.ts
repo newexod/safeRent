@@ -11,16 +11,16 @@ import { Component, OnInit } from '@angular/core';
 			<nav>
 				<ul>
 					<li>
-						<a href="#">Главная</a>
+						<a routerLink="/">Главная</a>
 					</li>
 					<li>
-						<a href="#">О нас</a>
+						<a routerLink="/about">О нас</a>
 					</li>
 					<li>
-						<a href="#">Аренда Квартир</a>
+						<a routerLink="/rent">Аренда Квартир</a>
 					</li>
 					<li>
-						<a href="#">Контакты</a>
+						<a routerLink="/contacts">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -28,53 +28,41 @@ import { Component, OnInit } from '@angular/core';
   	`,
   styles: 
   	[`
-			.navigation {
-				text-transform: uppercase;	
-			}
-
-			.logo {
-				float: left;
-				padding: 25px 30px;
-			}
-			.logo a {
-				text-decoration: none;
-				color: #333;
-			}
-			.logo a:hover {
-				text-decoration: underline;
-			}
-
-			nav {
-				float: right;
-			}
-			nav ul {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-				font-size: 0;
-			}
-			nav ul li {
-				display: inline-block;
-				font-size: 16px;
-				line-height: 20px;
-				vertical-align: top;
-			}
-			nav ul li a {
-				display: block;
-				padding: 25px 10px;
-				color: #333;
-				text-decoration: none;
-			}
-			nav ul li a:hover {
-				background-color: #ff0000;
-				color: white;
-			}
-
-			.navigation:after {
-				content: '';
-				display: block;
-				clear: both;
-			}
+		.navigation {
+			text-transform: uppercase;	
+			max-width: 1600px;
+			min-width: 320px;
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.logo {
+			// margin-left: 120px;
+		}
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: 0;
+		}
+		nav ul li {
+			display: inline-block;
+			font-size: 16px;
+			line-height: 20px;
+			vertical-align: top;
+		}
+		nav ul li a {
+			display: block;
+			padding: 25px 10px;
+			color: #333;
+			text-decoration: none;
+		}
+		nav ul li a:hover {
+			background-color: #ff0000;
+			color: white;
+		}
   	`]
 })
 export class NavigationComponent implements OnInit {
@@ -85,3 +73,27 @@ export class NavigationComponent implements OnInit {
   }
 
 }
+/*
+
+.logo {
+	float: left;
+	padding: 25px 30px;
+}
+.logo a {
+	text-decoration: none;
+	color: #333;
+}
+.logo a:hover {
+	text-decoration: underline;
+}
+
+nav {
+	float: right;
+}
+
+
+.navigation:after {
+	content: '';
+	display: block;
+	clear: both;
+}*/
