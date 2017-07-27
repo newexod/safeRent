@@ -1,6 +1,8 @@
 import { Component} from '@angular/core';
 
 
+
+
 @Component({
   selector: 'weoffer-root',
   templateUrl: 'weoffer.component.html',    
