@@ -15,6 +15,7 @@ import { FooterModule } from './footer/footer.module';
 import { WeofferModule } from './weoffer/weoffer.module';
 import { PopularModule } from './popular/popular.module';
 import { AdModule } from './ad/ad.module';
+import { PersonalModule } from './personal/personal.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AdModule } from './ad/ad.module';
     FooterModule,
     WeofferModule,
     PopularModule,
-    AdModule
+    AdModule,
+    PersonalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 		<app-header></app-header>
 		<navigation></navigation>
 		<filter></filter>
+    <personal-root></personal-root>
     <ad-root></ad-root>
     <popular-root></popular-root>
 		<weoffer-root></weoffer-root>

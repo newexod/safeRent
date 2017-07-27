@@ -10,6 +10,4 @@ import { Ad } from './ad.component';
     ]
 })
 
-export  class AdModule {
- isShow: boolean = false;	
-}
+export  class AdModule {}
