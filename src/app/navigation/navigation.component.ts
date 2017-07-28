@@ -14,6 +14,9 @@ import { Component, OnInit } from '@angular/core';
 						<a routerLink="/">Главная</a>
 					</li>
 					<li>
+						<a routerLink="/profile">Profile</a>
+					</li>
+					<li>
 						<a routerLink="/about">О нас</a>
 					</li>
 					<li>

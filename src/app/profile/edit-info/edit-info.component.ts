@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'registration-block',
-  template: 
-  	`
-			<div class="registration" [ngStyle]="{'background':'url(' + registration.link + ')'}">
-				<h1>Регистрация</h1>
-			</div>
-			<div class="registration-container">
-				<h2>Поля обозначенные * обязательны к заполнению</h2>
+	selector: 'edit-info',
+	template:
+		`
+			<div class="edit-container">
+				<h2>Редактировать личную информацию</h2>
 				<form class="form-horizontal">
 				  <div class="form-group">
 				    <label for="text" class="col-sm-2 control-label">Text</label>
@@ -84,82 +81,12 @@ import { Component, OnInit } from '@angular/core';
 				  </div>
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+				      <button type="submit" class="btn btn-default">Редактировать</button>
 				    </div>
 				  </div>
 				</form>
 			</div>
-  	`,
-  	styles: 
-			[`
-				.registration-container {
-					background-color: #f0f0f0;
-				}
-				.registration {
-					max-width: 1600px;
-					height: 499px;
-
-					display: flex;
-					justify-content: center;
-					align-items: flex-end;
-				}
-				h1 {
-					font-size: 36px;
-					font-weight: 500;
-					margin-bottom: 75px;
-					padding: 22px 242px;
-					background-color: white;
-					border-radius: 5px;
-				}
-				h2 {
-					position: relative;
-					text-align: center;
-					margin: 0;
-					padding-top: 50px;
-					padding-bottom: 20px;
-				}
-				h2:after {
-					content: '';
-					position: absolute;
-					top: 95px;
-			    right: 715px;
-			    width: 168px;
-			    height: 2px;
-					background-color: #e0e0e0;
-				}
-				h2:before {
-					content: '';
-					position: absolute;
-					top: 95px;
-			    left: 765px;
-			    width: 70px;
-			    height: 2px;
-					background-color: #e39c12;
-					z-index: 1;
-				}
-				form {
-					padding: 20px;
-
-				}
-				.btn {
-					background-color: #F39C12;
-					color: white;
-				}
-			`]
-			// :host {
-			// 		text-align: center;
-			// 	}
-  // styleUrls: ['./registration.component.css']
+		`
 })
-export class RegistrationBlockComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-
-  registration = {
-		link: "../../assets/reg.png"
-	}
-}
+export class EditInfoComponent {}
