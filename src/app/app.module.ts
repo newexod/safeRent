@@ -14,6 +14,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FilterComponent } from './filter/filter.component';
 import { FooterModule } from './footer/footer.module';
 import { WeofferModule } from './weoffer/weoffer.module';
+
+import { AdModule } from './ad/ad.module';
+import { PersonalModule } from './personal/personal.module';
 import { PopularModule } from './popular/popular.module';
 
 
@@ -41,7 +44,9 @@ import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
     BrowserModule,
     FooterModule,
     WeofferModule,
+    PersonalModule,
     PopularModule,
+    AdModule,
     RoutingModule,
     ModalModule.forRoot(),
     // RouterModule.forRoot([

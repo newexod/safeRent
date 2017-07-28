@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
-import { Popular } from './popular.component';
+import { Personal } from './personal.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-   Popular
+   Personal
   ],
   exports: [
-    Popular
+    Personal
     ],
-  imports: [
+    imports: [
     CommonModule
-   ],
+   ]
 })
 
-export  class PopularModule { }
+export  class PersonalModule {
+ 	
+}
