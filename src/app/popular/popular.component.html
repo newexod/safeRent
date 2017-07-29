@@ -1,4 +1,4 @@
- <div id="popular">
+<!-- <div id="popular">
         <div><h2>ПОПУЛЯРНЫЕ КВАРТИРЫ</h2></div>
         <div class="offer_highlight">
             <div class="offer_blockmark1"></div>
@@ -152,4 +152,39 @@
             </div>
         </div>
         <button class="offer_btn">ПОСМОТРЕТЬ ВСЕ</button>
-    </div>
+</div> -->
+<div id="popular">
+        <div><h2>ПОПУЛЯРНЫЕ КВАРТИРЫ</h2></div>
+        <div class="offer_highlight">
+            <div class="offer_blockmark1"></div>
+            <div class="offer_blockmark2"></div>
+            <div class="offer_blockmark1"></div>
+        </div>
+        <div class="content_pro">
+            <div *ngFor="let item of apart"  class="popular_block">
+                <div class="block_props">
+                    <div class="content_check"><img src="./assets/kvart.jpg" class="popular_img"></div>
+                    <div class="popular_button"><a href="#">ПОДРОБНЕЕ</a></div>
+                    <div class="popular_content">
+                        <div class="content1"><p class="content_class1">LOREM IPSUM</p><p class="content_class2">{{item.price}} грн.</p></div>
+                    </div>
+                    <div class="main_divider"><div class="divider2"></div><div class="divider1"></div></div>
+                    <div class="content2">Lorem Ipsum Dolor Sit Amet</div>
+                    <div class="content_discription">
+                        <div class="content3"><img src="./assets/Capa 1 10_area.svg"> {{item.square}}м<sup>2</sup></div>
+                        <div class="content3 add"><img src="./assets/Group_bad.svg"> {{item.bed}} кровати</div>
+                        <div class="content3 add"><img src="./assets/Group_tv.svg"> {{item.tv}} телевизора</div>
+                    </div>
+                     <div class="content_discription2">
+                        <div class="content3"><img src="./assets/Group_wifi.svg"> Wi-Fi</div>
+                        <div class="content3"><img src="./assets/Group_bad.svg"> {{item.balcony}} балкон</div>
+                        <div class="content3 add2"><img src="./assets/Group_bad.svg"> {{item.floor}} этаж</div>
+                    </div>
+                    <img src="./assets/zzzz.jpg" class="content_img">
+                    <div class="divider3"></div>
+                    <div class="content_more"><a href="#">ПОДРОБНЕЕ</a></div>
+                </div>
+            </div>
+       </div>
+       <button class="offer_btn">ПОСМОТРЕТЬ ВСЕ</button>   
+</div>
