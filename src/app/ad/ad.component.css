@@ -97,9 +97,6 @@ body {
 .location_property{
 	margin-bottom: 15px;
 }
-.location_props{
-	
-}
 .quant_room{
 	/*margin-right: -20px;*/
 	padding-left: -10px;
@@ -200,3 +197,223 @@ select{
 	transition-timing-function: ease-in-out;
 	flex-direction: column;
 }
+
+@media (max-width: 1400px){
+.ad_create{
+ 	left: 540px;
+ 	
+} 
+.wrapper_advert{
+	width: 1400px;
+	
+}
+}
+@media (max-width: 1200px){
+.ad_create{
+ 	left: 400px;
+ 	
+} 
+.wrapper_advert{
+	width: 1200px;
+	
+}
+}
+@media (max-width: 1000px){
+.ad_create{
+ 	left: 250px;
+ 	
+} 
+.wrapper_advert{
+	width: 1000px;
+	
+}
+}
+@media (max-width: 900px){
+.ad_create{
+ 	left: 250px;
+ 	
+} 
+.wrapper_advert{
+	width: 850px;
+	
+}
+}
+@media (max-width: 800px){
+.ad_create{
+ 	left: 200px;
+ 	
+} 
+.wrapper_advert{
+	width: 700px;
+	margin-left: 10px;
+	
+}
+}
+@media (max-width: 750px){
+.ad_create{
+ 	left: 200px;
+ 	
+} 
+.form_style{
+	width: 600px;
+	margin: 0 auto;
+	padding-left: 20px;
+
+
+}
+.wrapper_advert{
+	margin: 0;
+	
+}
+}
+@media (max-width: 680px){
+.ad_create{
+ 	left: 80px;
+} 
+.form_style{
+	width: 500px;
+	margin-left: 48px;
+	padding-left: 20px;
+}
+.wrapper_advert{
+	margin: 0;
+	
+}
+#description{
+	width: 396px;
+	margin-left: 48px;
+}
+#location{
+	margin-left: 48px;
+}
+.location_props{
+	margin-left: 48px;	
+}
+}
+@media (max-width: 580px){
+.ad_create{
+ 	left: 40px;
+} 
+.form_style{
+	width: 400px;
+	margin-left: 18px;
+	padding-left: 0;
+}
+.wrapper_advert{
+	margin: 0;
+	
+}
+#description{
+	width: 396px;
+	margin-left: 48px;
+}
+#location{
+	margin-left: 48px;
+}
+.location_props{
+	margin-left: 48px;	
+}
+#send_form{
+	margin:25px 30px 20px 75px; 
+}
+#ad_propose{
+	margin: 0;
+	text-align: left;
+
+}
+#headline{
+	width: 300px;
+}
+#description{
+	width: 300px;
+}
+#location{
+	width: 300px;
+}
+.price_property{
+	padding-left: 45px;
+
+}
+.room_property{
+	display:flex;
+	flex-direction: column;
+}
+.quant_room{
+	padding-left: 40px;
+}
+.room_property input{
+	margin-left: 40px;
+}
+.type_room{
+	padding-left: 40px;
+	
+}
+.floor_property{
+	padding-left: 40px;
+}
+.period_property{
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+}	
+#photo_org3{
+	margin-left: 30px;
+}
+#photo_org{
+	margin-left: 30px;
+}
+#photo_org2{
+	margin-left: 30px;
+}
+}
+@media (max-width: 450px){
+.form_style{
+	width: 315px;
+	margin:0;
+	padding-left: 0;
+}
+
+.ad_create{
+ 	left: 10px;
+ 	width: 300px;
+ 	text-align: center;
+ 	height: 80px;
+} 
+
+.form_style{
+	width: 300px;
+	margin-left: 10px;
+	padding-left: 0;
+}
+
+#photo_org3{
+	margin-left: 5px;
+}
+#photo_org{
+	margin-left: 5px;
+}
+#photo_org2{
+	margin-left: 5px;
+}
+#send_form{
+	margin:25px 30px 20px 25px; 
+
+}
+#ad_propose{
+	text-align: center;
+}
+#headline{
+	width: 220px;
+}
+#description{
+	width: 220px;
+}
+#location{
+	width: 220px;
+}
+#price{
+	padding-left: 35px;
+
+}
+}
+

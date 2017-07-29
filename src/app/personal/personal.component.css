@@ -143,11 +143,12 @@ body {
 	text-decoration: none;
 }
 .popular_button a:hover{
-	color: red;
+	color: blue;
 	border-color: blue;
+	font-weight: 700;
 }
 .popular_button:hover{
-	border: 1px solid blue;
+	border: 2px solid blue;
 }
 .popular_content{
 	display: flex;
@@ -290,13 +291,149 @@ body {
 .comment_confirm{
 	height: 30px;
 	width: 250px;
-	/*margin-top: 50px;
-	margin-right: 200px;*/
-	margin: 50px 90px 0 90px;
+	margin: 50px 130px 0 50px;
 	cursor: pointer;
+	border-radius: 5px;
 }
 .comment_confirm:hover{
-	border: 3px solid red;
+	border: 3px solid blue;
 	color: blue;
-	font-weight: 600;
+	font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+
+.first_info h2{
+	text-align: center;
+}
+
+#textarea{	
+	width: 650px;
+}
+	.first_comments{
+	width: 1100px;
+	
+}
+.comment_confirm{
+	margin: 50px 90px 0 50px;
+
+}
+}
+
+
+@media (max-width: 1000px) {
+
+#textarea{	
+	width: 450px;
+}
+	.first_comments{
+	width: 900px;
+	
+}
+.comment_confirm{
+	margin: 50px 90px 0 45px;
+
+}
+
+}
+
+@media (max-width: 800px) {
+
+.first_props{
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+
+
+#textarea{	
+	width: 450px;
+}
+	.first_comments{
+	flex-direction: column;
+	width: 900px;
+	align-items: center;
+	
+}
+.comment_confirm{
+	margin: 50px 90px 0 45px;
+
+}
+.first_info2 {
+	order: 1;
+	
+}
+#textarea{
+	order: 2;
+}
+
+.first_comments_real{
+	flex-direction: column;
+	align-items: center;
+}
+
+.first_comments_real #textarea{
+	order: 1;
+}
+.comment_confirm{
+	order: 2;
+}
+#block_personal h2{
+	text-align: center;
+}
+
+
+}
+
+@media (max-width: 600px){
+	.first_contacts_props{
+	width: 320px;
+}
+
+} 
+
+@media (max-width: 500px) {
+
+#textarea{	
+	width: 250px;
+}
+	.first_comments{
+	flex-direction: column;
+	width: 900px;
+	align-items: center;
+	
+}
+.comment_confirm{
+	margin: 50px 90px 0 45px;
+
+}
+.first_info2 {
+	order: 1;
+	
+}
+#textarea{
+	order: 2;
+}
+
+.first_comments_real{
+	flex-direction: column;
+	align-items: center;
+}
+
+.first_comments_real #textarea{
+	order: 1;
+}
+.comment_confirm{
+	order: 2;
+}
+.comment_confirm{
+	margin: 50px 90px 0 95px;
+
+}
+#block_personal h2{
+	text-align: center;
+}
+.margin_top3{
+	text-align: center;
+}
 }
