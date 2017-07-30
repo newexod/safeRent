@@ -56,6 +56,7 @@ import { ProfileComponent } from './profile/profile.component';
     PopularModule,
     RoutingModule,
     ModalModule.forRoot(),
+    BootstrapModalModule,
     // RouterModule.forRoot([
     // {
     //   path: 'registration',
