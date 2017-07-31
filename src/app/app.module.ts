@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpModule }    from '@angular/http';
 
 import { AppComponent } from './app.component';
 
@@ -32,6 +33,8 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { MainInfoComponent } from './profile/main-info/main-info.component';
 import { EditInfoComponent } from './profile/edit-info/edit-info.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AdModule } from './ad/ad.module';
+import { PersonalModule } from './personal/personal.module';
 
 
 @NgModule({
@@ -55,6 +58,9 @@ import { ProfileComponent } from './profile/profile.component';
     WeofferModule,
     PopularModule,
     RoutingModule,
+    AdModule,
+    PersonalModule,
+    HttpModule,
     ModalModule.forRoot(),
     BootstrapModalModule,
     // RouterModule.forRoot([
