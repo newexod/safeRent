@@ -9,5 +9,12 @@ import { Component} from '@angular/core';
 })
 
 export class Ad{
-	property: string = "none";	
+	property: string = 'none';	
+	isShow: boolean = false;
+
+	toggleShow(){
+		this.isShow = !this.isShow;
+	}
+
+	
 }

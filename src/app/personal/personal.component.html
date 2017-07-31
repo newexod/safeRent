@@ -1,4 +1,4 @@
-<div  class="show">
+<div *ngIf="isShow">
     <div id="block_personal">
     	<div class="splash"></div>
     	<h1 class="first_part">ПЕРВЫЙ УЧАСТНИК</h1>
@@ -42,7 +42,6 @@
     	</div>
     	<h2 class="margin_top3">КВАРТИРЫ ПОЛЬЗОВАТЕЛЯ</h2>
     	<div id="popular">
-
             <div class="content_pro">
                 <div *ngFor="let item of offer"  class="popular_block">
                     <div class="block_props">
@@ -111,6 +110,7 @@
         </div>
     </div>
 </div>
+<button (click)="toggleShow()">show/hides</button>
 
 			
 

@@ -1,9 +1,10 @@
-<div [style.display]="'property'" class="show">
+<!-- <div [style.display]="property"  > -->
+<div *ngIf="isShow">
 	<section id="ad">
 	    <div class="ad_create"><h3>СОЗДАНИЕ ОБЪЯВЛЕНИЯ</h3></div>
 	</section>
 	<section id="ad_propose">
-		<div><h4>Поля обозначенные <span class="cc914">*</span> обязательны к заполнению</h4></div>
+		<h4>Поля обозначенные <span class="cc914">*</span> обязательны к заполнению</h4>
 	</section>
 	<section class="wrapper_advert">
 			<form class="form_style" method="post">
@@ -84,6 +85,7 @@
 			</form>
 	</section>
 </div>
+<button (click)="toggleShow()">show/hides</button>
 
 
 
