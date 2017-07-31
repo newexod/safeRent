@@ -9,6 +9,8 @@ import { Weoffer } from '../weoffer/weoffer.component';
 	template:
 		`
 			<filter></filter>
+			<ad-root></ad-root>
+			<personal-root></personal-root>
 			<popular-root></popular-root>
 			<weoffer-root></weoffer-root>
 		`

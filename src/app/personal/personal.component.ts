@@ -23,5 +23,12 @@ export class Personal{
 	{price: 3950, square: 61, bed: 2, tv: 1, balcony: 1, floor: 16}
 	];
 
+	isShow: boolean = false;
+
+	toggleShow(){
+		this.isShow = !this.isShow;
+	}
+
+
 
 }

@@ -24,6 +24,8 @@ import { RegistrationBlockComponent } from './registration-block.component';
 // </p>
 
 
+// <button (click)="onClick()">Войти</button>
+
 
 @Component({
   selector: 'header',
@@ -37,8 +39,8 @@ import { RegistrationBlockComponent } from './registration-block.component';
 		
 
 		
-		<button (click)="onClick()">Войти</button>
 		
+		<a (click)="openCustom()">Войти</a>
 		
 
 
@@ -46,6 +48,11 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			<a routerLink="/registration">Регистрация</a>
 		</nav>
   	`,
+  	styles: [`
+		a {
+			cursor: pointer;
+		}
+  	`],
   	providers: [Modal]
   // styleUrls: ['./header.component.css']
 })
@@ -65,27 +72,22 @@ export class HeaderComponent implements OnInit {
 
 	constructor(public modal: Modal) {}
 
-	// get version(): string {
-	// 	return window.angular2ModalVer;
-	// }
-
 	onClick() {
 		this.modal.alert()
 			.size('lg')
 			.showClose(true)
 			.title('Авторизация')
 			.body(`
-				<div class="login-group">
-				  <input type="email" class="login-control" name="mail" placeholder="Адрес электронной почты" required>
-				</div>
-				<div class="login-group">
-				  <input type="password" class="login-control" name="password" placeholder="Пароль" required>
-				</div>
-				<div class="login-group">
-				  <button (click)="addLogin()">Войти</button>
-				</div>
+				<label for="inputEmail3" control-label">Email</label>
+			    
+			    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			    
 			`)
 			.open();
+	}
+
+	openCustom() {
+	    return this.modal.open(CustomModal,  overlayConfigFactory({ num1: 2, num2: 3 }, BSModalContext));
 	}
 
 

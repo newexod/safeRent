@@ -1,4 +1,7 @@
-import { Component, OnInit} from '@angular/core';
+import { Component} from '@angular/core';
+import { Injectable} from '@angular/core';
+import { Http} from '@angular/http';
+import 'rxjs/add/operator/map';
 
 
 
@@ -9,12 +12,25 @@ import { Component, OnInit} from '@angular/core';
 
 })
 
-export class Popular implements OnInit{
-	ngOnInit(): void{
-		(apart => this.apart = apart.slice(1,3));
+// @Injectable()
+
+export class Popular{
+
+	constructor(private http: Http){
+		console.log('start');
+		this.getPosts().subscribe(posts =>{
+			this.posts = posts;
+	});
 	}
-	
-	apart = [
+
+	getPosts(){
+		 return this.http.get('http://127.0.0.1:8000/adverts/')
+			.map(res => res.json());
+
+	}
+
+		
+	inputApart = [
 	{price: 4000, square: 48, bed: 2, tv: 1, balcony: 1, floor: 2},
 	{price: 4200, square: 56, bed: 3, tv: 2, balcony: 2, floor: 1},
 	{price: 4300, square: 52, bed: 1, tv: 3, balcony: 1, floor: 2},
@@ -29,5 +45,13 @@ export class Popular implements OnInit{
 	{price: 3950, square: 61, bed: 2, tv: 1, balcony: 1, floor: 16}
 	];
 
+	apart: any[]=this.inputApart.slice(1,4);
+ 	posts: any[];
+	
+	getData(){ 
+		return this.apart=this.inputApart;
+   	}
+
+   	
 
 }
