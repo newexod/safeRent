@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+} 
+
+/*css for what we offer*/
+
+#total_info{
+	max-width: 1600px;
+	min-width: 320px;
+	width: 100%;
+/*	height: 200px;*/
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 40px 0;
+	background-image: url(../../assets/image5.png);
+	background-size: cover;
+	margin-bottom: 60px;
+	justify-content: space-around;
+
+}
+.info_block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+	margin: 55px 40px;
+}
+.info_block p{
+	font-size: 20px;
+}
