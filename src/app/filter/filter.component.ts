@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 	selector: 'filter',
 	template:
 		`
-			<div class="filter" [ngStyle]="{'background':'url(' + filter.link + ')'}">
+			<div class="filter" [ngStyle]="{'background-image':'url(' + filter.link + ')'}">
 				
 				<form class="col-md-9 form-inline">
 

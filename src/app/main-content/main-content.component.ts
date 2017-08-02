@@ -13,6 +13,9 @@ import { Weoffer } from '../weoffer/weoffer.component';
 			<personal-root></personal-root>
 			<popular-root></popular-root>
 			<weoffer-root></weoffer-root>
+			<area-root></area-root>
+			<totalinfo-root></totalinfo-root>
+			<landlord-root></landlord-root>
 		`
 })
 

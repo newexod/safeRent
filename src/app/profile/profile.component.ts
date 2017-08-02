@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 	selector: 'profile',
 	template:
 		`
-			<div class="edit" [ngStyle]="{'background':'url(' + edit.link + ')'}"></div>
+			<div class="edit" [ngStyle]="{'background-image':'url(' + edit.link + ')'}"></div>
 			<h2>Личный кабинет</h2>
 			<main-info></main-info>
 			<edit-info></edit-info>
@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
 				.edit {
 					max-width: 1600px;
 					height: 499px;
+					background-size: cover;
 				}
 			`]
 })

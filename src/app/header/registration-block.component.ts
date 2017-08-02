@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'registration-block',
   template: 
   	`
-			<div class="registration" [ngStyle]="{'background':'url(' + registration.link + ')'}">
+			<div class="registration" [ngStyle]="{'background-image':'url(' + registration.link + ')'}">
 				<h1>Регистрация</h1>
 			</div>
 			<div class="registration-container">
@@ -98,7 +98,7 @@ import { Component, OnInit } from '@angular/core';
 				.registration {
 					max-width: 1600px;
 					height: 499px;
-
+					background-size: cover;
 					display: flex;
 					justify-content: center;
 					align-items: flex-end;
