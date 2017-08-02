@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+} 
+
+/*css for what we offer*/
+
+#area{
+	max-width: 1600px;
+	min-width: 320px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+.area_highlight{
+	display: flex;
+	flex-direction: row;
+}
+.area_blockmark1{
+	border: 1px solid  #D3D3D3;
+	width: 45px;
+}
+.area_blockmark2{
+	border: 1px solid orange;
+	width: 60px;
+}
+.area_detail{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1600px;
+	min-width: 320px;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding: 10px;
+
+}
+.area_block{
+	width: 300px;
+	height: 178px;
+	text-align: center;
+	/*border: 1px solid red;*/
+	background-color: #C0C0C0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 20px;
+	background-image: url(https://www.yana.kiev.ua/img/countries/big/499/1224243939.jpg);
+	background-size: cover;
+}
+.area_block h3{
+	margin-bottom: 55px;
+	color: white;
+}
+
+.area_block h3 a{
+	color: white;
+	text-decoration-line: none;
+}
+.area_block h3 a:hover{
+	color: red;
+	font-weight: 700;
+}
+.area_block2{
+	width: 820px;
+	height: 178px;
+	text-align: center;
+	/*border: 1px solid red;*/
+	background-color: #C0C0C0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 20px;
+	background-image: url(https://www.yana.kiev.ua/img/countries/big/499/1224243939.jpg);
+	background-size: cover;
+}
+.area_block2 h3{
+	margin-bottom: 55px;
+	color: white;
+}
+.area_block2 h3 a{
+	color: white;
+	text-decoration-line: none;
+}
+.area_block2 h3 a:hover{
+	color: red;
+	font-weight: 700;
+}
+.area_detail2{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1600px;
+	min-width: 320px;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding: 10px;
+}

@@ -35,6 +35,9 @@ import { EditInfoComponent } from './profile/edit-info/edit-info.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AdModule } from './ad/ad.module';
 import { PersonalModule } from './personal/personal.module';
+import { AreaModule } from './area/area.module';
+import { TotalinfoModule } from './totalinfo/totalinfo.module';
+import { LandlordModule } from './landlord/landlord.module';
 
 
 @NgModule({
@@ -61,6 +64,9 @@ import { PersonalModule } from './personal/personal.module';
     AdModule,
     PersonalModule,
     HttpModule,
+    AreaModule,
+    LandlordModule,
+    TotalinfoModule,
     ModalModule.forRoot(),
     BootstrapModalModule,
     // RouterModule.forRoot([
