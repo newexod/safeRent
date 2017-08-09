@@ -8,13 +8,13 @@ import { Component} from '@angular/core';
 
 })
 
-export class Ad{
-	property: string = 'none';	
-	isShow: boolean = false;
+export class AdComponent{
+	// property: string = 'none';	
+	// isShow: boolean = false;
 
-	toggleShow(){
-		this.isShow = !this.isShow;
-	}
+	// toggleShow(){
+	// 	this.isShow = !this.isShow;
+	// }
 
 	
 }

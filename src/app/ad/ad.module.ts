@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Ad } from './ad.component';
+import { AdComponent } from './ad.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
 declarations: [
-   Ad
+   AdComponent
   ],
 exports: [
-    Ad
+    AdComponent
     ],
 imports: [
     CommonModule

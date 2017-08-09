@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'profile',
+	// selector: 'profile',
 	template:
 		`
 			<div class="edit" [ngStyle]="{'background-image':'url(' + edit.link + ')'}"></div>
 			<h2>Личный кабинет</h2>
 			<main-info></main-info>
 			<edit-info></edit-info>
+		
 		`,
 		styles:
 			[`
