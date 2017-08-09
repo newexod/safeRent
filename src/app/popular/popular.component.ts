@@ -12,23 +12,36 @@ import 'rxjs/add/operator/map';
 
 })
 
-// @Injectable()
+@Injectable()
 
 export class Popular{
-
-	constructor(private http: Http){
-		console.log('start');
-		this.getPosts().subscribe(posts =>{
-			this.posts = posts;
-	});
-	}
+	apartBase: any[]=[];
+	apart: any[]=[];
 
 	getPosts(){
 		 return this.http.get('http://127.0.0.1:8000/adverts/')
 			.map(res => res.json());
-
+	}
+	
+	constructor(private http: Http){
+		console.log('start');
+		console.log(this.apartBase);
+		this.getPosts().subscribe(posts =>{
+			this.apartBase= posts;
+			this.apart=this.apartBase.slice(1,2);			
+	});
 	}
 
+
+
+	// apart: any[]=this.apartBase.slice(1,3);
+
+	
+	getData(){ 
+		console.log(this.apartBase);
+		return this.apart=this.apartBase;
+   	}
+ 		// apart: any[];
 		
 	inputApart = [
 	{price: 4000, square: 48, bed: 2, tv: 1, balcony: 1, floor: 2},
@@ -45,12 +58,8 @@ export class Popular{
 	{price: 3950, square: 61, bed: 2, tv: 1, balcony: 1, floor: 16}
 	];
 
-	apart: any[]=this.inputApart.slice(1,4);
- 	posts: any[];
-	
-	getData(){ 
-		return this.apart=this.inputApart;
-   	}
+	// apart: any[]=this.inputApart.slice(1,4);
+ 
 
    	
 

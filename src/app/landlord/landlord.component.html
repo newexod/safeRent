@@ -6,8 +6,10 @@
             <div class="offer_blockmark1"></div>
         </div>
         <div class="impost">
-            <div class="impost_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
-            <button>подать объявление</button>            
+           <div class="impost_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+          <!--  <button (click)="toggleShow()">{{isShow ? "закрыть" : "подать объявление"}}</button>
+           <a routerLink="/advert">подать объвление</a> -->
+           <button><a routerLink="/advert">подать объвление</a></button>
         </div>
         <div class="circs">
             <div>
@@ -21,4 +23,90 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </div>            
         </div>
+</div>
+<div *ngIf="isShow">
+    <section id="ad">
+        <div class="ad_create"><h3>СОЗДАНИЕ ОБЪЯВЛЕНИЯ</h3></div>
+    </section>
+    <section id="ad_propose">
+        <h4>Поля обозначенные <span class="cc914">*</span> обязательны к заполнению</h4>
+    </section>
+    <section class="wrapper_advert">
+            <form class="form_style" method="post">
+                <fieldset class="headline_property no_border">
+                    <label for="headline">Заголовок
+                    <span class="cc914">*</span></label>
+                    <input type="text" name="headline" id="headline">
+                </fieldset>
+                <fieldset class="no_border description_property">
+                    <label for="description" class="description_props">Описание
+                    <span class="cc914">*</span></label>
+                    <textarea name="description" id="description"></textarea>
+                </fieldset> 
+                <fieldset class="location_property no_border">
+                    <label for="location" class="location_props">Местоположение
+                    <span class="cc914">*</span></label>
+                    <input type="text" name="location" id="location">
+                </fieldset> 
+                <fieldset class="price_property no_border">
+                    <label for="price">Цена
+                    <span class="cc914">*</span></label>
+                    <input type="text" name="price" id="price">
+                    <select>
+                        <option value="UAH">грн.</option>
+                        <option value="USD">$</option>
+                        <option value="EUR">€</option>
+                    </select>
+                </fieldset>
+                <fieldset class="room_property no_border">
+                    <label class="quant_room">Количество комнат
+                    <span class="cc914">*</span></label>
+                        <label>
+                        <input type="radio" name="room" value="1"> Одна
+                        </label>
+                        <label>
+                          <input type="radio" name="room" value="2"> Две
+                        </label>
+                        <label>
+                          <input type="radio" name="room" value="3"> Три
+                        </label>
+                        <label>
+                          <input type="radio" name="room" value="4"> Четыре
+                        </label>
+                </fieldset>
+                <fieldset class="type_room no_border">
+                    <label>Тип жилья</label>
+                        <select class="room_select">
+                            <option value="" class="hidden"></option>
+                            <option value="flat">квартира</option>
+                            <option value="private">частный дом</option>
+                        </select>
+                </fieldset>
+                <fieldset class="floor_property no_border">
+                    <label for="floor">Этаж
+                    <span class="cc914">*</span></label>
+                    <input type="number" name="floor" id="floor" min="0" max="30" step="1">
+                </fieldset>
+                <fieldset class="period_property no_border">
+                    <label>Период сдачи:</label>
+                        <label for="period_from">c </label>
+                        <input type="date" name="period" id="period_from">
+                        <label for="period_to">до </label>
+                        <input type="date" name="period" id="period_to">
+                </fieldset>
+                <fieldset class="props2 no_border">
+                    <label>Фотографии</label>
+                    <input type="file" name="file_1" id="photo_org">
+                    <input type="file" name="file_2" id="photo_org3">
+                    <input type="file" name="file_3" id="photo_org2">
+                    <input type="file" name="file_4" id="photo_org3">
+                    <input type="file" name="file_5" id="photo_org2">
+                    <input type="file" name="file_6" id="photo_org3">
+                </fieldset>
+                <fieldset class="no_border">
+                    <input type="button" value="Создать" id="send_form">
+                    <input type="reset" value="Отмена/вернуться" onclick="formReset()" id="reset_form">
+                </fieldset>
+            </form>
+    </section>
 </div>
