@@ -58,6 +58,14 @@ body {
 	border: 2px solid blue;
 	font-weight: 800;
 }
+.impost a{
+	color: white;
+	text-decoration: none;
+}
+.impost button:hover a{
+	color: blue;
+	font-weight: 800;
+}
 .circs{
 	display: flex;
 	flex-direction: row;
@@ -80,4 +88,414 @@ body {
 .circs a:hover{
 	color: blue;
 	
+}
+
+#ad{
+	max-width: 1600px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 100px 0;
+	background-image: url(http://malahit-pansionat.ru/images/main/malahit_nomera2_1600px.jpg);
+	background-size: cover;
+	align-items: center;
+	position: relative;
+
+}
+.ad_create{
+	background-color: white;
+	width: 400px;
+	height: 60px;
+/*	border: 1px solid red;*/
+	text-align: center;
+ 	bottom: 30px;
+ 	right: 610px;
+ 	position: absolute; 
+ 	vertical-align: middle;
+ 	
+}
+#ad_propose{
+	max-width: 1600px;
+	min-width: 320px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*css for offer of advertisement*/
+
+.cc914{
+	color:#C91414;
+}
+.hidden {
+	display: none;
+}
+.border{
+	border: 1px solid red;
+}
+.wrapper_advert{
+	margin: 0 auto;
+	width: 1600px;
+	padding: 10px 0 40px 0;
+}
+.headline_property{
+	margin: 10px 0 10px 0;
+	padding-left: 48px;
+	padding-top: 10px;
+}
+#headline{
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+	width: 400px;
+}
+#description{
+	height: 140px;
+	width: 396px;
+	resize: none;
+	overflow: hidden;
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+	margin-left: 6px;
+}
+.description_props{
+	float: left;
+	padding-left: 50px;
+}
+.description_property{
+	margin-top: 20px;
+}
+.no_border{
+	border: none;
+}
+.lfloat{
+	float: left;
+	padding-left: 60px;
+}
+.location_property{
+	margin-top: 25px;
+}
+#location{
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+	width: 400px;
+}
+.location_property{
+	margin-bottom: 15px;
+}
+.quant_room{
+	/*margin-right: -20px;*/
+	padding-left: -10px;
+}
+#price{
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+}
+select{
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+}
+.price_property{
+	margin-bottom: 15px;
+	padding-left: 90px;
+	margin-top: 25px;
+}
+.room_property{
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+.type_room{
+	margin-bottom: 15px;
+	padding-left: 58px;
+	margin-top: 20px;
+}
+.room_select{
+	margin-left: 8px;
+}
+#floor{
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+}
+.floor_property{
+	margin-bottom: 15px;
+	padding-left: 90px;
+	margin-top: 20px;
+}
+#period_from, #period_to{
+	border: 2px solid #d1d1d1;
+	border-radius: 4px
+}
+.period_property{
+	margin-bottom: 15px;
+	padding-left: 28px;
+	margin-top: 20px;
+}
+#send_form{
+	margin:25px 30px 20px 145px; 
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#reset_form{
+	border: 2px solid #d1d1d1;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#reset_form:hover{
+	border: 2px solid blue;	
+}
+#send_form:hover{
+	border: 2px solid blue;	
+}
+.form_style{
+	border: 2px solid #d1d1d1;
+/*	border-bottom: 2px solid #d1d1d1;*/
+	width: 700px;
+	margin: 0 auto;
+	padding-left: 60px;
+	border-radius: 6px;
+
+}
+#photo{
+	margin: 5px 0 5px 0;
+}
+#photo_org{
+	margin: 0 0 5px 100px;
+}
+.lfloat_props{
+	float: left;
+	padding-left: 40px;
+}
+.props2{
+	padding-left: 45px;
+	margin-top: 25px;
+	
+}
+#photo_org2{
+	margin: 0 0 5px 99px;
+}
+#photo_org3{
+	margin: 0 0 5px 100px;
+}
+.show{
+	transition-duration: 3s;
+	transition-property: display;
+	transition-timing-function: ease-in-out;
+	flex-direction: column;
+}
+
+@media (max-width: 1400px){
+.ad_create{
+ 	left: 540px;
+ 	
+} 
+.wrapper_advert{
+	width: 1400px;
+	
+}
+}
+@media (max-width: 1200px){
+.ad_create{
+ 	left: 400px;
+ 	
+} 
+.wrapper_advert{
+	width: 1200px;
+	
+}
+}
+@media (max-width: 1000px){
+.ad_create{
+ 	left: 250px;
+ 	
+} 
+.wrapper_advert{
+	width: 1000px;
+	
+}
+}
+@media (max-width: 900px){
+.ad_create{
+ 	left: 250px;
+ 	
+} 
+.wrapper_advert{
+	width: 850px;
+	
+}
+}
+@media (max-width: 800px){
+.ad_create{
+ 	left: 200px;
+ 	
+} 
+.wrapper_advert{
+	width: 700px;
+	margin-left: 10px;
+	
+}
+}
+@media (max-width: 750px){
+.ad_create{
+ 	left: 200px;
+ 	
+} 
+.form_style{
+	width: 600px;
+	margin: 0 auto;
+	padding-left: 20px;
+
+
+}
+.wrapper_advert{
+	margin: 0;
+	
+}
+}
+@media (max-width: 680px){
+.ad_create{
+ 	left: 80px;
+} 
+.form_style{
+	width: 500px;
+	margin-left: 48px;
+	padding-left: 20px;
+}
+.wrapper_advert{
+	margin: 0;
+	
+}
+#description{
+	width: 396px;
+	margin-left: 48px;
+}
+#location{
+	margin-left: 48px;
+}
+.location_props{
+	margin-left: 48px;	
+}
+}
+@media (max-width: 580px){
+.ad_create{
+ 	left: 40px;
+} 
+.form_style{
+	width: 400px;
+	margin-left: 18px;
+	padding-left: 0;
+}
+.wrapper_advert{
+	margin: 0;
+	
+}
+#description{
+	width: 396px;
+	margin-left: 48px;
+}
+#location{
+	margin-left: 48px;
+}
+.location_props{
+	margin-left: 48px;	
+}
+#send_form{
+	margin:25px 30px 20px 75px; 
+}
+#ad_propose{
+	margin: 0;
+	text-align: left;
+
+}
+#headline{
+	width: 300px;
+}
+#description{
+	width: 300px;
+}
+#location{
+	width: 300px;
+}
+.price_property{
+	padding-left: 45px;
+
+}
+.room_property{
+	display:flex;
+	flex-direction: column;
+}
+.quant_room{
+	padding-left: 40px;
+}
+.room_property input{
+	margin-left: 40px;
+}
+.type_room{
+	padding-left: 40px;
+	
+}
+.floor_property{
+	padding-left: 40px;
+}
+.period_property{
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+}	
+#photo_org3{
+	margin-left: 30px;
+}
+#photo_org{
+	margin-left: 30px;
+}
+#photo_org2{
+	margin-left: 30px;
+}
+}
+@media (max-width: 450px){
+.form_style{
+	width: 315px;
+	margin:0;
+	padding-left: 0;
+}
+
+.ad_create{
+ 	left: 10px;
+ 	width: 300px;
+ 	text-align: center;
+ 	height: 80px;
+} 
+
+.form_style{
+	width: 300px;
+	margin-left: 10px;
+	padding-left: 0;
+}
+
+#photo_org3{
+	margin-left: 5px;
+}
+#photo_org{
+	margin-left: 5px;
+}
+#photo_org2{
+	margin-left: 5px;
+}
+#send_form{
+	margin:25px 30px 20px 25px; 
+
+}
+#ad_propose{
+	text-align: center;
+}
+#headline{
+	width: 220px;
+}
+#description{
+	width: 220px;
+}
+#location{
+	width: 220px;
+}
+#price{
+	padding-left: 35px;
+
+}
 }

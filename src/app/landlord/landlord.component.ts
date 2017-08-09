@@ -1,13 +1,17 @@
-import { Component} from '@angular/core';
-
-
+import { Component, OnInit, Input, Output, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 
 
 @Component({
   selector: 'landlord-root',
-  templateUrl: 'landlord.component.html',    
+  templateUrl: 'landlord.component.html', 
   styleUrls: ['landlord.component.css']
 
 })
 
-export class Landlord{}
+export class Landlord{
+	isShow: boolean = false;
+
+	toggleShow(){
+		this.isShow = !this.isShow
+	}
+}

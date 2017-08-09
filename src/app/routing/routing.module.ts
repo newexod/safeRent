@@ -13,6 +13,7 @@ import { MainInfoComponent } from '../profile/main-info/main-info.component';
 
 import { MainContentComponent } from '../main-content/main-content.component';
 import { ProfileComponent } from '../profile/profile.component';
+import { AdComponent } from '../ad/ad.component';
 
 const routes: Routes = [
 	{
@@ -31,7 +32,12 @@ const routes: Routes = [
 	{
 		path: 'profile',
 		component: ProfileComponent
+	},
+	{	path: 'advert',
+		component: AdComponent
+
 	}
+	
 ];
 
 @NgModule({

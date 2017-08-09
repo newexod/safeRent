@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
 						<a routerLink="/profile">Profile</a>
 					</li>
 					<li>
-						<a routerLink="/about">О нас</a>
+						<a routerLink="/advert">О нас</a>
 					</li>
 					<li>
 						<a routerLink="/rent">Аренда Квартир</a>
@@ -28,6 +28,7 @@ import { Component, OnInit } from '@angular/core';
 				</ul>
 			</nav>
 		</div>
+		
   	`,
   styles: 
   	[`
