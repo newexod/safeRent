@@ -15,6 +15,9 @@ import { MainContentComponent } from '../main-content/main-content.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { AdComponent } from '../ad/ad.component';
 
+import { ContactsComponent } from '../contacts/contacts.component';
+import { AboutUsComponent } from '../about-us/about-us.component';
+
 const routes: Routes = [
 	{
 		path: '',
@@ -36,6 +39,14 @@ const routes: Routes = [
 	{	path: 'advert',
 		component: AdComponent
 
+	},
+	{
+		path: 'contacts',
+		component: ContactsComponent
+	},
+	{
+		path: 'about-us',
+		component: AboutUsComponent
 	}
 	
 ];

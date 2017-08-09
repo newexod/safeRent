@@ -17,10 +17,10 @@ import { Component, OnInit } from '@angular/core';
 						<a routerLink="/profile">Profile</a>
 					</li>
 					<li>
-						<a routerLink="/advert">О нас</a>
+						<a routerLink="/about-us">О нас</a>
 					</li>
 					<li>
-						<a routerLink="/rent">Аренда Квартир</a>
+						<a routerLink="/advert">Аренда Квартир</a>
 					</li>
 					<li>
 						<a routerLink="/contacts">Контакты</a>
