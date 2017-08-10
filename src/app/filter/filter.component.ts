@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 		`
 			<div class="filter" [ngStyle]="{'background-image':'url(' + filter.link + ')'}">
 				
-				<form class="col-md-9 form-inline">
+				<form class="col-md-10 form-inline">
 
 				  	<div class="col-md-3 form-group">
 				    	<label for="region">Район</label>
@@ -84,7 +84,7 @@ import { Component, OnInit } from '@angular/core';
 			}
 			form {
 				border-radius: 5px;
-				padding: 20px;
+				padding: 20px 60px 20px 180px;
 				background-color: white;
 				margin-bottom: 65px;
 			}
@@ -111,7 +111,7 @@ import { Component, OnInit } from '@angular/core';
 				background-color: #F39C12;
 				padding: 8px 30px;
 				color: white;
-				margin-left: 230px;
+				margin-left: 185px;
 			}
 		`]
 

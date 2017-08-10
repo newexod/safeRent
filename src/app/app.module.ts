@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule }    from '@angular/http';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 
@@ -39,8 +41,8 @@ import { AreaModule } from './area/area.module';
 import { TotalinfoModule } from './totalinfo/totalinfo.module';
 import { LandlordModule } from './landlord/landlord.module';
 import { Postedapart } from './postedapart/postedapart.component';
-
-
+import { ContactsComponent } from './contacts/contacts.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { Postedapart } from './postedapart/postedapart.component';
     MainInfoComponent,
     ProfileComponent,
     Postedapart,
-    EditInfoComponent
+    EditInfoComponent,
+    ContactsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -74,6 +78,9 @@ import { Postedapart } from './postedapart/postedapart.component';
     TotalinfoModule,
     ModalModule.forRoot(),
     BootstrapModalModule,
+    AgmCoreModule.forRoot({
+        apiKey: 'AIzaSyA9gkB5Ji1Ig7pHwwXIXEm4ABc7jOC9C9Y'
+    })
     // RouterModule.forRoot([
     // {
     //   path: 'registration',
