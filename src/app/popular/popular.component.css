@@ -40,6 +40,10 @@ body {
 	flex-wrap: wrap;
 	align-content: space-around;
 }
+#content_check:hover + popular_button{
+	border: 1px solid red;
+	display: block;
+}
 .popular_button{
 	width: 130px;
 	height: 30px;
@@ -50,6 +54,7 @@ body {
 	border-radius: 5px;
 	text-align: center;
 	padding-top: 5px;
+	display: none;
 	
 }
 .popular_button a{
@@ -82,6 +87,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 0 10px;
+	margin-top: 5px;
 }
 .content_class1{
 	font-weight: bold;
