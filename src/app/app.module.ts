@@ -33,13 +33,13 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { MainInfoComponent } from './profile/main-info/main-info.component';
 import { EditInfoComponent } from './profile/edit-info/edit-info.component';
 import { ProfileComponent } from './profile/profile.component';
-// import { AdModule } from './ad/ad.module';
 import { AdComponent } from './ad/ad.component';
 import { PersonalModule } from './personal/personal.module';
 import { AreaModule } from './area/area.module';
 import { TotalinfoModule } from './totalinfo/totalinfo.module';
 import { LandlordModule } from './landlord/landlord.module';
-import { Button } from './landlord/button.component';
+import { Postedapart } from './postedapart/postedapart.component';
+
 
 
 @NgModule({
@@ -51,12 +51,13 @@ import { Button } from './landlord/button.component';
     // UserBlockComponent,
     RegistrationBlockComponent,
     AdComponent,
+    
     NavigationComponent,
     FilterComponent,
     MainContentComponent,
     MainInfoComponent,
     ProfileComponent,
-    Button,
+    Postedapart,
     EditInfoComponent
   ],
   imports: [

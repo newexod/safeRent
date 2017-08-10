@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
-import { AdComponent } from './ad.component';
+import { Postedapart } from './postedapart.component';
 import { CommonModule } from '@angular/common';
-
 
 @NgModule({
 declarations: [
-   AdComponent
+   Postedapart
   ],
 exports: [
-    AdComponent
+    Postedapart
     ],
-imports:
- [
+imports: [
     CommonModule
- ],
+   ],
 })
 
-export  class AdModule {}
+export  class PostedapartModule {}

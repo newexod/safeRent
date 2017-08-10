@@ -14,6 +14,8 @@ import { MainInfoComponent } from '../profile/main-info/main-info.component';
 import { MainContentComponent } from '../main-content/main-content.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { AdComponent } from '../ad/ad.component';
+import { Personal } from '../personal/personal.component';
+import { Postedapart } from '../postedapart/postedapart.component';
 
 const routes: Routes = [
 	{
@@ -36,6 +38,14 @@ const routes: Routes = [
 	{	path: 'advert',
 		component: AdComponent
 
+	},
+	{
+		path: 'personalInfo',
+		component:Personal
+	},
+	{
+		path: 'poster',
+		component: Postedapart
 	}
 	
 ];
