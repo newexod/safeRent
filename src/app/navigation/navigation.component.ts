@@ -20,9 +20,6 @@ import { Component, OnInit } from '@angular/core';
 						<a routerLink="/about-us">О нас</a>
 					</li>
 					<li>
-						<a routerLink="/advert">Аренда Квартир</a>
-					</li>
-					<li>
 						<a routerLink="/contacts">Контакты</a>
 					</li>
 				</ul>
@@ -39,8 +36,9 @@ import { Component, OnInit } from '@angular/core';
 			width: 100%;
 			margin: 0 auto;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			align-items: center;
+			padding: 0 32px 0 15px;
 		}
 		.logo {
 			// margin-left: 120px;

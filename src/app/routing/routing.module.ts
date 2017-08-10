@@ -56,6 +56,7 @@ const routes: Routes = [
 	},
 	{
 		path: 'about-us',
+		component: AboutUsComponent
 	}
 	
 ];
