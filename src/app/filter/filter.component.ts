@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 		`
 			<div class="filter" [ngStyle]="{'background-image':'url(' + filter.link + ')'}">
 				
-				<form class="col-md-10 form-inline">
+				<form class="col-md-10 form-inline form_add">
 
 				  	<div class="col-md-3 form-group">
 				    	<label for="region">Район</label>
@@ -55,11 +55,11 @@ import { Component, OnInit } from '@angular/core';
 
 					<div class="col-md-12 form-group type">
 						<label for="type">Тип</label>
-						<input type="checkbox">
+						<input type="checkbox" class="qwe">
 						<label>Долгосрочная аренда квартир</label>
-						<input type="checkbox">
+						<input type="checkbox" class="qwe">
 						<label>Квартиры посуточно</label>
-						<input type="checkbox">
+						<input type="checkbox" class="qwe">
 						<label>Квартиры с почасовой оплатой</label>
 						<button type="submit" class="btn">Найти</button>
 					</div>
@@ -71,6 +71,7 @@ import { Component, OnInit } from '@angular/core';
 		`,
 	styles: 
 		[`
+
 			.filter {
 				max-width: 1600px;
 				height: 499px;
@@ -84,7 +85,7 @@ import { Component, OnInit } from '@angular/core';
 			}
 			form {
 				border-radius: 5px;
-				padding: 20px 60px 20px 180px;
+				padding: 20px 0 20px 180px;
 				background-color: white;
 				margin-bottom: 65px;
 			}
@@ -96,12 +97,17 @@ import { Component, OnInit } from '@angular/core';
 			.form-group:last-child {
 				margin: 0;
 			}
+			.form_add {
+				width: 1593px;
+			}
 			.square > input {
 				padding: 6px 0;
 			}
 			.type > label {
 				text-transform: none;
 				font-weight: 400;
+				padding-left: 5px;
+
 			}
 			.type > label:first-child {
 				text-transform: uppercase;
@@ -111,7 +117,15 @@ import { Component, OnInit } from '@angular/core';
 				background-color: #F39C12;
 				padding: 8px 30px;
 				color: white;
-				margin-left: 185px;
+				margin-left: 325px;
+			}
+			.qwe{
+				transform:scale(1.7);
+  				opacity:0.9;
+  				cursor:pointer;
+  				margin-left: 20px;
+
+
 			}
 		`]
 
