@@ -31,27 +31,31 @@ import { RegistrationBlockComponent } from './registration-block.component';
   selector: 'header',
   template: 
   	`
-		<p class="social">Подписывайтесь</p>
-		<social-links></social-links>
-		<p class="phone">
-			<a href="tel:+38 063 111 23 45">+38 063 111 23 45</a>
-		</p>
 		
-
-		
-		
-		<a (click)="openCustom()">Войти</a>
-		
-
-
-		<nav>
-			<a routerLink="/registration">Регистрация</a>
-		</nav>
+		<div class="header_icons">
+			<p class="social"><a href="#">Подписывайтесь</a></p>
+			<social-links></social-links>
+		</div>
+		<div class="header_icons">	
+			<a (click)="openCustom()">Войти</a>
+			<nav>
+				<a routerLink="/registration">Регистрация</a>
+			</nav>
+		</div>
+	
   	`,
-  	styles: [`
+  	styles: 
+  	[`
 		a {
 			cursor: pointer;
 		}
+		.header_icons{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			width: 320px;
+		}
+
   	`],
   	providers: [Modal]
   // styleUrls: ['./header.component.css']

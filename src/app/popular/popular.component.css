@@ -40,10 +40,9 @@ body {
 	flex-wrap: wrap;
 	align-content: space-around;
 }
-#content_check:hover + popular_button{
-	border: 1px solid red;
+/*#content_check:hover ~ .popular_button{
 	display: block;
-}
+}*/
 .popular_button{
 	width: 130px;
 	height: 30px;
