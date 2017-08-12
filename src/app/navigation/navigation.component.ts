@@ -40,7 +40,8 @@ import { Component, OnInit } from '@angular/core';
 			align-items: center;
 			padding: 0 32px 0 15px;
 		}
-		.logo {
+		.logo a {
+			color: #333;
 			// margin-left: 120px;
 		}
 		nav ul {
@@ -61,6 +62,7 @@ import { Component, OnInit } from '@angular/core';
 			color: #333;
 			text-decoration: none;
 		}
+
 		nav ul li a:hover {
 			background-color: #ff0000;
 			color: white;

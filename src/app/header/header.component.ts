@@ -55,7 +55,9 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			justify-content: space-around;
 			width: 320px;
 		}
-
+		p, a {
+			color: #333;
+		}
   	`],
   	providers: [Modal]
   // styleUrls: ['./header.component.css']
