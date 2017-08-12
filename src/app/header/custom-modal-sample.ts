@@ -30,7 +30,7 @@ export class CustomModalContext extends BSModalContext {
       <form class="form-horizontal">
         <div class="form-group">
           <div class="col-sm-offset-11">
-            <input type="button" class="btn btn-default" value="X" />
+            <input type="button" class="btn btn-default" value="X" (click)="close($event)" />
           </div>
         </div>
         <div class="form-group">
@@ -72,6 +72,11 @@ export class CustomModal implements CloseGuard, ModalComponent<CustomModalContex
     this.context = dialog.context;
     this.wrongAnswer = true;
     dialog.setCloseGuard(this);
+  }
+
+  close(e) {
+    console.log(e);
+    this.dialog.setCloseGuard(this);
   }
 
   onKeyUp(value) {
