@@ -31,9 +31,9 @@ import { Component, OnInit } from '@angular/core';
 
 	  			  	<div class="col-md-3 form-group square">
 		  			    <label for="square">Площадь</label>
-		    			<input id="square" class="form-control" type="number" min="0" max="100" step="1" placeholder="От" />
+		    			<input id="square" class="form-control" type="number" min="0" max="25" step="1" placeholder="От" />
 		    			 - 
-		    			<input id="square" class="form-control" type="number" min="0" max="100" step="1" placeholder="До">
+		    			<input id="square" class="form-control" type="number" min="35" max="100" step="1" placeholder="До">
 	  			  	</div>
 
 					<div class="col-md-3 form-group">
