@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif !important;
 	// font-weight: 500;
-	margin: 0 auto;
+	margin: 0 auto !important;
 	max-width: 1600px;
 }
 header {
