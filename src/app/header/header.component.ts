@@ -8,44 +8,87 @@ import { SocialLinksComponent } from './social-links.component';
 // import { UserBlockComponent } from './user-block.component';
 import { RegistrationBlockComponent } from './registration-block.component';
 
-// <p class="user-block">
-// 	<a href="#" (click)="showRegBlock()">Регистрация</a>
-// 	<registration-block
-// 		*ngIf="showReg"
-// 	></registration-block>
-// </p>
 
-
-// <p class="user-block">
-// 	<a href="#" (click)="showUserBlock()">Войти</a>
-// 	<user-block
-// 		*ngIf="showUser"
-// 	></user-block>
-// </p>
-
-
-// <button (click)="onClick()">Войти</button>
-
+  	// .header {
+  	// 	display: flex;
+  	// 	justify-content: space-between;
+  	// 	align-items: center;
+  	// 	padding-top: 15px;
+  	// }
 
 @Component({
   selector: 'header',
   template: 
   	`
-		
-		<div class="header_icons">
-			<p class="social"><a href="#">Подписывайтесь</a></p>
-			<social-links></social-links>
+		<div class="header">
+			<div class="header_icons">
+				<p class="social"><a href="#">Подписывайтесь</a></p>
+				<social-links></social-links>
+			</div>
+			<div class="header_icons">
+					<a data-toggle="modal" data-target="#sign-in" data-whatever="@getbootstrap">Войти</a>
+					<div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				  	<div class="modal-dialog" role="document">
+					    <div class="modal-content">
+				      	<div class="modal-header">
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        	<h4 class="modal-title" id="exampleModalLabel">Авторизация</h4>
+				      	</div>
+				      	<div class="modal-body">
+				        	<form class="form-horizontal">
+				          		<div class="form-group">
+				            		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				            		<div class="col-sm-10">
+				              			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				            		</div>
+				          		</div>
+				          		<div class="form-group">
+				            		<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				            		<div class="col-sm-10">
+				              			<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				            		</div>
+				          		</div>
+				          		<div class="form-group">
+				            		<div class="col-sm-12">
+				              			<div class="checkbox">
+				                			<label>
+				                  				<input type="checkbox">
+				                  				<span>Запомнить меня</span>
+				                  				<a routerLink="#">Забыл пароль?</a>
+				                			</label>
+				              			</div>
+				            		</div>
+				          		</div>
+					        </form>
+				      	</div>
+				      	<div class="modal-footer">
+				      		<a routerLink="/registration" data-dismiss="modal">Создать аккаунт</a>
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+					        <button type="button" class="btn btn-primary">Вход</button>
+				      	</div>
+					    </div>
+				  	</div>
+					</div>
+				<nav>
+					
+					<a routerLink="/registration">Регистрация</a>
+				</nav>
+			</div>
 		</div>
-		<div class="header_icons">	
-			<a (click)="openCustom()">Войти</a>
-			<nav>
-				<a routerLink="/registration">Регистрация</a>
-			</nav>
-		</div>
-	
   	`,
   	styles: 
   	[`
+  	.header {
+  		display: flex;
+  		justify-content: space-between;
+  		padding-top: 15px;
+  	}
+  	nav a {
+  		margin-right: 20px;
+  	}
+  	nav a:last-child {
+  		margin-right: 0;
+  	}
 		a {
 			cursor: pointer;
 		}
@@ -57,6 +100,36 @@ import { RegistrationBlockComponent } from './registration-block.component';
 		}
 		p, a {
 			color: #333;
+		}
+		.modal .modal-dialog .modal-content .modal-header h4 {
+			text-transform: initial;
+		}
+		.modal .modal-dialog .modal-content .modal-body .form-horizontal .form-group label {
+			text-transform: initial;
+		}
+		.modal .modal-dialog .modal-content .modal-body .form-horizontal .form-group label {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.modal .modal-dialog .modal-content .modal-body .form-horizontal .form-group label a {
+			color: #337ab7;
+		}
+		.modal .modal-dialog .modal-content .modal-footer a {
+			text-transform: initial;
+			color: #337ab7;
+			margin-right: 320px;
+		}
+		.modal-footer {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+		.btn-default {
+			margin-left: 0;
+		}
+		span {
+			margin-bottom: -5px;
 		}
   	`],
   	providers: [Modal]
