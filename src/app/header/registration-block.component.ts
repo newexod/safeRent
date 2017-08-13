@@ -93,9 +93,9 @@ import { Component, OnInit } from '@angular/core';
 					  </div>
 					</div>
 					<div class="form-group">
-					  <label for="passwordRepeat" class="col-sm-2 control-label">Пароль<span>*</span></label>
+					  <label for="passwordRepeat" class="col-sm-2 control-label">Подтвердить пароль<span>*</span></label>
 					  <div class="col-sm-8">
-					    <input type="passwordRepeat" class="form-control" id="passwordRepeat" placeholder="Подтвердите Ваш пароль" required>
+					    <input type="password" class="form-control" id="passwordRepeat" placeholder="Подтвердите Ваш пароль" required>
 					  </div>
 					</div>
 					<div class="form-group">
