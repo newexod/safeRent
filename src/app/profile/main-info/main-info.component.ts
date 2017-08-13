@@ -28,19 +28,11 @@ import { Component } from '@angular/core';
 				<div class="col-md-10 col-md-offset-1">
 					<h3>Информация о пользователе</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Ex nulla praesentium, doloremque ipsum consequuntur, enim? 
-						Deleniti optio similique magnam natus nesciunt ex expedita 
-						eligendi suscipit aliquam doloribus, fuga eveniet provident 
-						quae. Nesciunt accusantium quis sit, dolores, maiores 
-						cumque ab inventore possimus consequuntur quos, quo eveniet 
-						pariatur saepe. Voluptatibus repellat labore deleniti doloribus 
-						autem officia eos ex, suscipit aperiam, accusamus voluptas 
-						repellendus a libero corporis nam amet eaque sequi rerum. 
-						Modi laborum dignissimos numquam deserunt consectetur facere 
-						debitis necessitatibus corrupti aspernatur, mollitia, laudantium 
-						accusantium adipisci minima quasi, quos molestias vitae ut quia 
-						non voluptatem! Dicta ex earum voluptatibus velit, nostrum. Deleniti!
+					Здравствуйте, Я арендодатель. Меня зовут Роберт. Я обладатель пятикомнатного пентхауса в Аркадии. Я ценю свое время
+					и серьезность намерений людей, с которыми я работаю. Я устал от однотипных сервисов и посредников, которые обеспечивают
+					мне не подходящих квартиросъемщиков. Такие проблемы как: торг, порча дорогой мебели, а также занятие непристойными делами
+					в моей квартире - полностью не приемлемы для меня. С помощью данного сервиса я рассчитываю найти подходящих и надежных арендаторов.
+
 					</p>
 				</div>	
 			</div>
