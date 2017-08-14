@@ -22,7 +22,7 @@ import { RegistrationBlockComponent } from './registration-block.component';
   	`
 		<div class="header">
 			<div class="header_icons">
-				<p class="social"><a href="#">Подписывайтесь</a></p>
+				
 				<social-links></social-links>
 			</div>
 			<div class="header_icons">
@@ -98,6 +98,9 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			justify-content: space-around;
 			width: 320px;
 		}
+		.header_icons:first-child {
+			width: 150px;
+		}
 		p, a {
 			color: #333;
 		}
@@ -135,6 +138,22 @@ import { RegistrationBlockComponent } from './registration-block.component';
 		}
 		span {
 			margin-bottom: -5px;
+		}
+		@media (max-width: 767px) {
+			.header_icons a {
+				margin-right: -185px;
+			}
+			.header_icons nav a {
+				margin-right: -100px;
+			}
+		}
+		@media (max-width: 500px) {
+			.header_icons a {
+				margin-right: -85px;
+			}
+			.header_icons nav a {
+				margin-right: -40px;
+			}
 		}
   	`],
   	providers: [Modal]

@@ -127,6 +127,35 @@ import { Component, OnInit } from '@angular/core';
 
 
 			}
+			@media (max-width: 768px) {
+				.filter {
+					height: 700px;
+				}
+				form {
+					margin-top: 100px;
+					padding: 20px 100px 20px 100px;
+				}
+			}
+			@media (max-width: 627px) {
+				form {
+					padding: 20px 50px 20px 50px;
+				}
+			}
+			@media (max-width: 527px) {
+				form {
+					padding: 20px 30px 20px 30px;
+				}
+			}
+			@media (max-width: 487px) {
+				form {
+					padding: 20px 10px 20px 10px;
+				}
+			}
+			@media (max-width: 486px) {
+				form {
+					padding: 20px 0 20px 0;
+				}
+			}
 		`]
 
 		// на всякий случай
