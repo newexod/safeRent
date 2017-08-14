@@ -8,8 +8,10 @@
         <div class="content_pro">
             <div *ngFor="let item of apart"  class="popular_block">
                 <div class="block_props">
+
                     <div id="content_check"><a routerLink="/poster"><img src="{{item.link}}" class="popular_img"></a></div>
                    <!--  <div class="popular_button"><a href="#">ПОДРОБНЕЕ</a></div> -->
+
                     <div class="popular_content">
                         <div class="content1"><p class="content_class1">{{item.name}}</p><p class="content_class2">{{item.price}} грн.</p></div>
                     </div>

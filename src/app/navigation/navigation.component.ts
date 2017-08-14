@@ -3,69 +3,64 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'navigation',
   template: 
-  	`
-		<div class="navigation">
-			<div class="logo">
-				<a href="#">Safe-rent</a>
-			</div>
-			<nav>
-				<ul>
-					<li>
-						<a routerLink="/">Главная</a>
-					</li>
-					<li>
-						<a routerLink="/profile">Profile</a>
-					</li>
-					<li>
-						<a routerLink="/about-us">О нас</a>
-					</li>
-					<li>
-						<a routerLink="/contacts">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+  	`	
+  		<nav class="navbar navbar-default">
+  		  <div class="container-fluid">
+  		    <!-- Brand and toggle get grouped for better mobile display -->
+  		    <div class="navbar-header">
+  		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  		        <span class="sr-only">Toggle navigation</span>
+  		        <span class="icon-bar"></span>
+  		        <span class="icon-bar"></span>
+  		        <span class="icon-bar"></span>
+  		      </button>
+  		      <a class="navbar-brand" href="#">SAFE-RENT</a>
+  		    </div>
+
+  		    <!-- Collect the nav links, forms, and other content for toggling -->
+  		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  		      <ul class="nav navbar-nav navbar-right">
+  		        <li><a routerLink="/">ГЛАВНАЯ</a></li>
+  		        <li><a routerLink="/profile">ПРОФИЛЬ</a></li>
+  		        <li><a routerLink="/about-us">О НАС</a></li>
+  		        <li><a routerLink="/contacts">КОНТАКТЫ</a></li>
+  		      </ul>
+  		    </div><!-- /.navbar-collapse -->
+  		  </div><!-- /.container-fluid -->
+  		</nav>
 		
   	`,
   styles: 
   	[`
-		.navigation {
-			text-transform: uppercase;	
-			max-width: 1600px;
-			min-width: 320px;
-			width: 100%;
-			margin: 0 auto;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 0 32px 0 15px;
-		}
-		.logo a {
-			color: #333;
-			// margin-left: 120px;
-		}
 		nav ul {
 			margin: 0;
-			padding: 0;
-			list-style: none;
-			font-size: 0;
 		}
 		nav ul li {
-			display: inline-block;
 			font-size: 16px;
 			line-height: 20px;
-			vertical-align: top;
 		}
 		nav ul li a {
-			display: block;
 			padding: 25px 10px;
 			color: #333;
-			text-decoration: none;
 		}
 
 		nav ul li a:hover {
 			background-color: #ff0000;
 			color: white;
+		}
+		nav.navbar.navbar-default {
+			margin: 0;
+			border: none;
+			background-color: white;
+			border-color: white;
+		}
+		.navbar-brand {
+			padding: 23px 15px;
+		}
+		@media (max-width: 767px) {
+			.navbar-brand {
+				padding: 15px 15px;
+			}
 		}
   	`]
 })

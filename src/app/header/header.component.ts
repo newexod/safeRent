@@ -22,7 +22,7 @@ import { RegistrationBlockComponent } from './registration-block.component';
   	`
 		<div class="header">
 			<div class="header_icons">
-				<p class="social"><a href="#">Подписывайтесь</a></p>
+				
 				<social-links></social-links>
 			</div>
 			<div class="header_icons">
@@ -39,13 +39,13 @@ import { RegistrationBlockComponent } from './registration-block.component';
 				          		<div class="form-group">
 				            		<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 				            		<div class="col-sm-10">
-				              			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				              			<input type="email" class="form-control" id="inputEmail3" placeholder="Адрес электронной почты" required>
 				            		</div>
 				          		</div>
 				          		<div class="form-group">
-				            		<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				            		<label for="inputPassword3" class="col-sm-2 control-label">Пароль</label>
 				            		<div class="col-sm-10">
-				              			<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				              			<input type="password" class="form-control" id="inputPassword3" placeholder="Введите пароль" required>
 				            		</div>
 				          		</div>
 				          		<div class="form-group">
@@ -64,7 +64,7 @@ import { RegistrationBlockComponent } from './registration-block.component';
 				      	<div class="modal-footer">
 				      		<a routerLink="/registration" data-dismiss="modal">Создать аккаунт</a>
 					        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
-					        <button type="button" class="btn btn-primary">Вход</button>
+					        <button type="submit" class="btn btn-primary">Вход</button>
 				      	</div>
 					    </div>
 				  	</div>
@@ -98,11 +98,15 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			justify-content: space-around;
 			width: 320px;
 		}
+		.header_icons:first-child {
+			width: 150px;
+		}
 		p, a {
 			color: #333;
 		}
 		.modal .modal-dialog .modal-content .modal-header h4 {
 			text-transform: initial;
+			color: #F39C12;
 		}
 		.modal .modal-dialog .modal-content .modal-body .form-horizontal .form-group label {
 			text-transform: initial;
@@ -113,11 +117,11 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			align-items: center;
 		}
 		.modal .modal-dialog .modal-content .modal-body .form-horizontal .form-group label a {
-			color: #337ab7;
+			color: #F39C12;
 		}
 		.modal .modal-dialog .modal-content .modal-footer a {
 			text-transform: initial;
-			color: #337ab7;
+			color: #F39C12;
 			margin-right: 320px;
 		}
 		.modal-footer {
@@ -125,11 +129,31 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			justify-content: flex-end;
 			align-items: center;
 		}
+		.btn-primary {
+			background-color: #F39C12;
+			border-color: #F39C12;
+		}
 		.btn-default {
 			margin-left: 0;
 		}
 		span {
 			margin-bottom: -5px;
+		}
+		@media (max-width: 767px) {
+			.header_icons a {
+				margin-right: -185px;
+			}
+			.header_icons nav a {
+				margin-right: -100px;
+			}
+		}
+		@media (max-width: 500px) {
+			.header_icons a {
+				margin-right: -85px;
+			}
+			.header_icons nav a {
+				margin-right: -40px;
+			}
 		}
   	`],
   	providers: [Modal]
