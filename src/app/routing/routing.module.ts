@@ -16,6 +16,8 @@ import { ProfileComponent } from '../profile/profile.component';
 import { AdComponent } from '../ad/ad.component';
 import { Personal } from '../personal/personal.component';
 import { Postedapart } from '../postedapart/postedapart.component';
+import { Postedapartuser } from '../postedapartuser/postedapartuser.component';
+
 
 import { ContactsComponent } from '../contacts/contacts.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
@@ -57,6 +59,10 @@ const routes: Routes = [
 	{
 		path: 'about-us',
 		component: AboutUsComponent
+	},
+	{
+		path: 'posterUser',
+		component: Postedapartuser
 	}
 	
 ];

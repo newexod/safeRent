@@ -43,6 +43,7 @@ import { LandlordModule } from './landlord/landlord.module';
 import { Postedapart } from './postedapart/postedapart.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { Postedapartuser } from './postedapartuser/postedapartuser.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     // UserBlockComponent,
     RegistrationBlockComponent,
     AdComponent,
-    
+    Postedapartuser,
     NavigationComponent,
     FilterComponent,
     MainContentComponent,
