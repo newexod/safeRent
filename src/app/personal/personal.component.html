@@ -11,11 +11,11 @@
     		<div class="first_contacts">
     			<div class="first_contacts_props"> 
     				<span>Имя</span>	
-    				<span class="data">Any</span>
+    				<span class="data">Роберт</span>
     			</div>
     			<div class="first_contacts_props margin_top2"> 
     				<span>Фамилия</span>	
-    				<span class="data">Something</span>
+    				<span class="data">Дауни мл.</span>
     			</div>
     			<div class="first_contacts_props margin_top2"> 
     				<span>Телефон</span>	
@@ -27,30 +27,33 @@
     			</div>			
     			<div class="first_contacts_props margin_top2"> 
     				<span>Email</span>	
-    				<span class="data">somewhere@ukr.net</span>
+    				<span class="data">rob@mail.com</span>
     			</div>
     			<div class="first_contacts_props margin_top2"> 
     				<span>Login</span>	
-    				<span class="data">POROH333</span>
+    				<span class="data">rob333</span>
     			</div>
     		</div>
     	</div>
     	<div class="first_info">
     		<h2>ИНФОРМАЦИЯ О ПОЛЬЗОВАТЕЛЕ</h2>
-    		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+    		<span>    Здравствуйте, Я арендодатель. Меня зовут Роберт. Я обладатель пятикомнатного пентхауса в Аркадии. Я ценю свое время
+                    и серьезность намерений людей, с которыми я работаю. Я устал от однотипных сервисов и посредников, которые обеспечивают
+                    мне не подходящих квартиросъемщиков. Такие проблемы как: торг, порча дорогой мебели, а также занятие непристойными делами
+                    в моей квартире - полностью не приемлемы для меня. С помощью данного сервиса я рассчитываю найти подходящих и надежных арендаторов.</span>
     	</div>
     	<h2 class="margin_top3">КВАРТИРЫ ПОЛЬЗОВАТЕЛЯ</h2>
     	<div id="popular">
             <div class="content_pro">
                 <div *ngFor="let item of offer"  class="popular_block">
                     <div class="block_props">
-                        <div class="content_check"><img src="./assets/kvart.jpg" class="popular_img"></div>
+                        <a routerLink="/poster"><div class="content_check"><img src="{{item.link}}" class="popular_img"></div></a>
                         <!-- <div class="popular_button"><a href="#">ПОДРОБНЕЕ</a></div> -->
                         <div class="popular_content">
-                            <div class="content1"><p class="content_class1">LOREM IPSUM</p><p class="content_class2">{{item.price}} грн.</p></div>
+                            <div class="content1"><p class="content_class1">{{item.name}}</p><p class="content_class2">{{item.price}} грн.</p></div>
                         </div>
                         <div class="main_divider"><div class="divider2"></div><div class="divider1"></div></div>
-                        <div class="content2">Lorem Ipsum Dolor Sit Amet</div>
+                        <div class="content2">{{item.adress}}</div>
                         <div class="content_discription">
                             <div class="content3"><img src="./assets/Capa 1 10_area.svg"> {{item.square}}м<sup>2</sup></div>
                             <div class="content3 add"><img src="./assets/Group_bad.svg"> {{item.bed}} кровати</div>
@@ -62,6 +65,8 @@
                             <div class="content3 add2"><img src="./assets/Group_bad.svg"> {{item.floor}} этаж</div>
                         </div>
                         <img src="./assets/zzzz.jpg" class="content_img">
+                        <div class="divider3"></div>
+                        <div class="content_more"><a routerLink="/poster">ПОДРОБНЕЕ</a></div>
                     </div>
                 </div>
             </div>     
@@ -71,13 +76,13 @@
             <div class="content_pro">
                 <div *ngFor="let item of rent"  class="popular_block">
                     <div class="block_props">
-                        <div class="content_check"><img src="./assets/kvart.jpg" class="popular_img"></div>
+                        <a routerLink="/posterUser"><div class="content_check"><img src="{{item.link}}" class="popular_img"></div></a>
                       <!--   <div class="popular_button"><a href="#">ПОДРОБНЕЕ</a></div> -->
                         <div class="popular_content">
-                            <div class="content1"><p class="content_class1">LOREM IPSUM</p><p class="content_class2">{{item.price}} грн.</p></div>
+                            <div class="content1"><p class="content_class1">{{item.name}}</p><p class="content_class2">{{item.price}} грн.</p></div>
                         </div>
                         <div class="main_divider"><div class="divider2"></div><div class="divider1"></div></div>
-                        <div class="content2">Lorem Ipsum Dolor Sit Amet</div>
+                        <div class="content2">{{item.adress}}</div>
                         <div class="content_discription">
                             <div class="content3"><img src="./assets/Capa 1 10_area.svg"> {{item.square}}м<sup>2</sup></div>
                             <div class="content3 add"><img src="./assets/Group_bad.svg"> {{item.bed}} кровати</div>
@@ -89,6 +94,8 @@
                             <div class="content3 add2"><img src="./assets/Group_bad.svg"> {{item.floor}} этаж</div>
                         </div>
                         <img src="./assets/zzzz.jpg" class="content_img">
+                        <div class="divider3"></div>
+                        <div class="content_more"><a routerLink="/posterUser">ПОДРОБНЕЕ</a></div>
                     </div>
                 </div>
             </div>

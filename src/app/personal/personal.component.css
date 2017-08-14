@@ -169,6 +169,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 0 10px;
+	padding-top: 8px;
 }
 .content_class1{
 	font-weight: bold;
@@ -243,6 +244,7 @@ body {
 }
 .content_more a:hover{
 	color: red;
+	font-weight: 700;
 }
 .offer_btn{
 	background-color: orange;

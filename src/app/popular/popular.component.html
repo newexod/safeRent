@@ -8,13 +8,15 @@
         <div class="content_pro">
             <div *ngFor="let item of apart"  class="popular_block">
                 <div class="block_props">
-                    <div id="content_check"><a routerLink="/poster"><img src="./assets/kvart.jpg" class="popular_img"></a></div>
-                    <!-- <div class="popular_button"><a href="#">ПОДРОБНЕЕ</a></div> -->
+
+                    <div id="content_check"><a routerLink="/poster"><img src="{{item.link}}" class="popular_img"></a></div>
+                   <!--  <div class="popular_button"><a href="#">ПОДРОБНЕЕ</a></div> -->
+
                     <div class="popular_content">
-                        <div class="content1"><p class="content_class1">2-х комнатная квартира</p><p class="content_class2"> 4000 грн.</p></div>
+                        <div class="content1"><p class="content_class1">{{item.name}}</p><p class="content_class2">{{item.price}} грн.</p></div>
                     </div>
                     <div class="main_divider"><div class="divider2"></div><div class="divider1"></div></div>
-                    <div class="content2">Киев, ул. Ломоносова, 2а</div>
+                    <div class="content2">{{item.adress}}</div>
                     <div class="content_discription">
                         <div class="content3"><img src="./assets/Capa 1 10_area.svg"> {{item.square}}м<sup>2</sup></div>
                         <div class="content3 add"><img src="./assets/Group_bad.svg"> {{item.bed}} кровати</div>
