@@ -62,10 +62,10 @@ body {
 	color: white;
 	text-decoration-line: none;
 }
-.area_block h3 a:hover{
+/*.area_block h3 a:hover{
 	color: red;
 	font-weight: 700;
-}
+}*/
 .area_block2{
 	width: 820px;
 	height: 178px;
@@ -87,10 +87,10 @@ body {
 	color: white;
 	text-decoration-line: none;
 }
-.area_block2 h3 a:hover{
+/*.area_block2 h3 a:hover{
 	color: red;
 	font-weight: 700;
-}
+}*/
 .area_detail2{
 	display: flex;
 	flex-wrap: wrap;

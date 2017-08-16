@@ -242,10 +242,10 @@ body {
 	font: bold;
 	text-decoration: none;
 }
-.content_more a:hover{
+/*.content_more a:hover{
 	color: red;
 	font-weight: 700;
-}
+}*/
 .offer_btn{
 	background-color: orange;
 	color: white;
