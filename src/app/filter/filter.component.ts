@@ -12,21 +12,21 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 				  	<div class="col-md-3 form-group add_margin">
 				    	<label for="region">Район</label>
 	    				<select name="form-control" id="region" class="form-control" required>
-		    				<option value="">Киевский</option>
-		    				<option value="">Малиновский</option>
-		    				<option value="">Коминтерновский</option>
-		    				<option value="">Приморский</option>
-		    				<option value="">Суворовский</option>
+		    				<option value="Киевский">Киевский</option>
+		    				<option value="Малиновский">Малиновский</option>
+		    				<option value="Коминтерновский">Коминтерновский</option>
+		    				<option value="Приморский">Приморский</option>
+		    				<option value="Суворовский">Суворовский</option>
 	    				</select>
 				  	</div>
 
 				  	<div class="col-md-2 form-group rooms add_margin">
 					    <label for="rooms">Комнат</label>
 		    			<select name="form-control" id="rooms" class="form-control" required>
-		    				<option value="">1</option>
-		    				<option value="">2</option>
-		    				<option value="">3</option>
-		    				<option value="">4</option>
+		    				<option value="1">1</option>
+		    				<option value="2">2</option>
+		    				<option value="3">3</option>
+		    				<option value="4">4</option>
 		    			</select>
 				  	</div>
 

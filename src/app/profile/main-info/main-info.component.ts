@@ -4,20 +4,20 @@ import { Component } from '@angular/core';
 	selector: 'main-info',
 	template:
 		`
-			<div class="col-md-12">
-				<div class="col-md-3 col-md-offset-2 photo">
+			<div class="col-xs-12">
+				<div class="col-sm-3 col-sm-offset-2 col-xs-4 col-xs-offset-4 photo">
 					<p>
 						<img src="../../assets/rob.jpg" alt="rob" />
 					</p>
 				</div>
-				<div class="col-md-2">
+				<div class="col-sm-3 col-sm-offset-0 col-xs-4 col-xs-offset-2 rob">
 					<ul>
 						<li *ngFor="let userInfo of userInfo">
 							{{userInfo}}
 						</li>
 					</ul>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-4 col-sm-offset-0 col-xs-4 col-xs-offset-1 rob">
 					<ul>
 						<li *ngFor="let user of user">
 							{{user}}
@@ -25,7 +25,7 @@ import { Component } from '@angular/core';
 					</ul>
 				</div>
 				
-				<div class="col-md-10 col-md-offset-1">
+				<div class="col-xs-10 col-xs-offset-1">
 					<h3>Информация о пользователе</h3>
 					<p>
 						Здравствуйте, Я арендодатель. Меня зовут Роберт. Я обладатель пятикомнатного пентхауса в Аркадии. Я ценю свое время
@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
 			</div>
 		`,
 		styles: [`
-			.col-md-12 {
+			.col-xs-12 {
 				background-color: #f0f0f0;
 				padding-top: 50px;
 			}
@@ -62,6 +62,31 @@ import { Component } from '@angular/core';
 				width: 165px;
 				height: 200px;
 			}
+			@media (max-width: 530px) {
+				img {
+					width: 150px;
+	    			height: 180px;	
+				}
+			}
+			@media (max-width: 512px) {
+				.col-xs-4 p {
+					margin-left: -16.66667%;
+				}
+				div.col-sm-3.col-sm-offset-0.col-xs-4.col-xs-offset-2.rob {
+					width: 50%;
+					margin-left: 0;
+				}
+			}
+			@media (max-width: 400px) {
+				.col-xs-4 p {
+					margin-left: -42.66667%
+				}
+			}
+			@media (max-width: 352px) {
+				li {
+					font-size: 16px;
+				}
+			}
 		`]
 })
 
@@ -77,7 +102,7 @@ export class MainInfoComponent {
 
 	user = [
 		'Robert',
-		'Downey Jr.',
+		'Downey',
 		'05032942342',
 		'5',
 		'rob@mail.com',

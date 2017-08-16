@@ -8,46 +8,46 @@ import { Component, OnInit } from '@angular/core';
 				<h1>Регистрация</h1>
 			</div>
 			<div class="registration-container">
-				<h2>Поля обозначенные * обязательны к заполнению</h2>
+				<h2>Поля обозначенные <span>*</span> обязательны к заполнению</h2>
 				<form class="form-horizontal">
 				  <div class="form-group">
-				    <label for="firstName" class="col-sm-2 control-label">Имя<span>*</span></label>
+				    <label for="firstName" class="col-sm-3 col-md-2 control-label">Имя<span>*</span></label>
 				    <div class="col-sm-8">
 				      <input type="firstName" class="form-control" id="firstName" placeholder="Ваше имя" required>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="lastName" class="col-sm-2 control-label">Фамилия<span>*</span></label>
+				    <label for="lastName" class="col-sm-3 col-md-2 control-label">Фамилия<span>*</span></label>
 				    <div class="col-sm-8">
 				      <input type="lastName" class="form-control" id="lastName" placeholder="Ваша Фамилия" required>
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="email" class="col-sm-2 control-label">Email<span>*</span></label>
+				    <label for="email" class="col-sm-3 col-md-2 control-label">Email<span>*</span></label>
 				    <div class="col-sm-8">
 				      <input type="email" class="form-control" id="email" placeholder="Адрес электронной почты" required>
 				    </div>
 				  </div>
 					<div class="form-group">
-					  <label for="password" class="col-sm-2 control-label">Пароль<span>*</span></label>
+					  <label for="password" class="col-sm-3 col-md-2 control-label">Пароль<span>*</span></label>
 					  <div class="col-sm-8">
 					    <input type="password" class="form-control" id="password" placeholder="Введите Ваш пароль" required>
 					  </div>
 					</div>
 					<div class="form-group">
-					  <label for="passwordRepeat" class="col-sm-2 control-label">Подтвердить пароль<span>*</span></label>
+					  <label for="passwordRepeat" class="col-sm-3 col-md-2 control-label">Подтвердить пароль<span>*</span></label>
 					  <div class="col-sm-8">
 					    <input type="password" class="form-control" id="passwordRepeat" placeholder="Подтвердите Ваш пароль" required>
 					  </div>
 					</div>
 					<div class="form-group">
-					  <label for="phone" class="col-sm-2 control-label">Номер телефона<span>*</span></label>
+					  <label for="phone" class="col-sm-3 col-md-2 control-label">Номер телефона<span>*</span></label>
 					  <div class="col-sm-8">
-					    <input type="tel" class="form-control" id="search" pattern="\(\d\d\d\) ?\d\d\d-\d\d-\d\d" placeholder="(###) ###-##-##" required>
+					    <input type="tel" class="form-control" id="search" pattern="380[0-9]{9}" placeholder="(###) ###-##-##" required>
 					  </div>
 					</div>
 				  <div class="form-group">
-				    <div class="col-sm-offset-2 col-sm-10">
+				    <div class="col-sm-offset-3 col-md-offset-2 col-sm-5">
 				      <button type="submit" class="btn btn-default">Зарегистрироваться</button>
 				      <a routerLink='/' class="btn btn-danger">Вернуться</a>
 				    </div>
@@ -83,25 +83,25 @@ import { Component, OnInit } from '@angular/core';
 					padding-top: 50px;
 					padding-bottom: 20px;
 				}
-				h2:after {
-					content: '';
-					position: absolute;
-					top: 95px;
-			    right: 715px;
-			    width: 168px;
-			    height: 2px;
-					background-color: #e0e0e0;
-				}
-				h2:before {
-					content: '';
-					position: absolute;
-					top: 95px;
-			    left: 765px;
-			    width: 70px;
-			    height: 2px;
-					background-color: #e39c12;
-					z-index: 1;
-				}
+				// h2:after {
+				// 	content: '';
+				// 	position: absolute;
+				// 	top: 95px;
+				//     right: 715px;
+				//     width: 168px;
+				//     height: 2px;
+				// 	background-color: #e0e0e0;
+				// }
+				// h2:before {
+				// 	content: '';
+				// 	position: absolute;
+				// 	top: 95px;
+				//     left: 765px;
+				//     width: 70px;
+				//     height: 2px;
+				// 	background-color: #e39c12;
+				// 	z-index: 1;
+				// }
 				form {
 					padding: 20px;
 
@@ -115,7 +115,27 @@ import { Component, OnInit } from '@angular/core';
 					color: red;
 				}
 				label {
-					font-size: 18px;
+					// font-size: 18px;
+				}
+				@media (max-width: 1100px) {
+					h1 {
+						padding: 22px 212px;
+					}
+				}
+				@media (max-width: 800px) {
+					h1 {
+						padding: 18px 160px;
+					}
+				}
+				@media (max-width: 600px) {
+					h1 {
+						padding: 12px 100px;
+					}
+				}
+				@media (max-width: 450px) {
+					h1 {
+						padding: 8px 40px;
+					}
 				}
 			`]
 			// :host {
