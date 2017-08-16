@@ -44,6 +44,7 @@ import { Postedapart } from './postedapart/postedapart.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { Postedapartuser } from './postedapartuser/postedapartuser.component';
+import { IonRangeSliderModule } from "ng2-ion-range-slider";
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { Postedapartuser } from './postedapartuser/postedapartuser.component';
     TotalinfoModule,
     ModalModule.forRoot(),
     BootstrapModalModule,
+    IonRangeSliderModule,
     AgmCoreModule.forRoot({
         apiKey: 'AIzaSyA9gkB5Ji1Ig7pHwwXIXEm4ABc7jOC9C9Y'
     })

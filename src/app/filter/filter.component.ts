@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IonRangeSliderModule } from "ng2-ion-range-slider";
 
 @Component({
 	selector: 'filter',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 				
 				<form class="col-md-10 form-inline form_add">
 
-				  	<div class="col-md-3 form-group">
+				  	<div class="col-md-3 form-group add_margin">
 				    	<label for="region">Район</label>
 	    				<select name="form-control" id="region" class="form-control" required>
 		    				<option value="">Киевский</option>
@@ -19,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
 	    				</select>
 				  	</div>
 
-				  	<div class="col-md-2 form-group rooms">
+				  	<div class="col-md-2 form-group rooms add_margin">
 					    <label for="rooms">Комнат</label>
 		    			<select name="form-control" id="rooms" class="form-control" required>
 		    				<option value="">1</option>
@@ -29,28 +30,34 @@ import { Component, OnInit } from '@angular/core';
 		    			</select>
 				  	</div>
 
-	  			  	<div class="col-md-3 form-group square">
+	  			  	<div class="col-md-3 form-group square add_margin">
 		  			    <label for="square">Площадь</label>
 		    			<input id="square" class="form-control" type="number" min="0" max="25" step="1" placeholder="От" />
 		    			 - 
 		    			<input id="square" class="form-control" type="number" min="35" max="100" step="1" placeholder="До">
 	  			  	</div>
 
-					<div class="col-md-3 form-group">
-						<label for="price">Цена</label>
-						<input id="price" class="form-control" type="range" min="1000" max="10000" value="5000" step="500" list="price-settings" multiple>
-						<datalist id="price-settings">
-							<option value="1000" label="0">1000</option>
-							<option value="2000">2000</option>
-							<option value="3000">3000</option>
-							<option value="4000">4000</option>
-							<option value="5000">5000</option>
-							<option value="6000">6000</option>
-							<option value="7000">7000</option>
-							<option value="8000">8000</option>
-							<option value="9000">9000</option>
-							<option value="10000" label="10000">10000</option>
-						</datalist>
+					<div class="slider_width">
+						<label for="price">ЦЕНА</label>				
+						<ion-range-slider #sliderElement
+				          type="double"
+				          min="0"
+				          max="30000"
+				          step="100"
+				          from_min="0"
+				          from_max="30000"
+				          from_shadow="false"
+				          to="0"
+				          to_min="18000"
+				          to_max="30000"
+				          to_shadow="false"
+				          prefix=""
+				          postfix=" грн."
+				          decorate_both="false"
+				          (onUpdate)="myOnUpdate($event)"
+				          (onChange)="myOnChange($event)"
+				          (onFinish)="myOnFinish($event)" class="add_width">
+						</ion-range-slider>			  
 					</div>
 
 					<div class="col-md-12 form-group type">
@@ -64,13 +71,29 @@ import { Component, OnInit } from '@angular/core';
 						<button type="submit" class="btn">Найти</button>
 					</div>
 				</form>
-				
+
 
 			</div>
+			
+				
 
 		`,
 	styles: 
 		[`
+			.slider_width{
+				width:300px;
+				display: flex;
+				justify-content: space-between; 
+			}
+			.add_width{
+				min-width: 240px; 
+			}
+			.slider_width label{
+				padding-top: 20px;
+			}
+			.add_margin{
+				margin-top: 13px;
+			}
 
 			.filter {
 				max-width: 1600px;
