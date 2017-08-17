@@ -19,91 +19,79 @@ body {
 .posted_img{
 	display: flex;
 	flex-direction: column;
-	width: 700px;
+	max-width: 700px;
 	height: 800px;
 	overflow: auto;
 }
 .posted_img img{
 	margin-top: 10px;
 	margin-right: 20px;
+	max-width: 100%;
 }
 .posted_info{
 	display: flex;
 	flex-direction: column;
-	width: 800px;
+	max-width: 800px;
 	margin-left: 20px;
-}
-.posted_info h2 span{
-	color: red;
+	color: dimgray;
 }
 .info{
 	border-bottom: 1px solid grey;
-	width: 620px;
+	max-width: 620px;
 	padding-bottom: 12px;
 	margin-bottom: 20px;
 }
-.info_icons div{
-	border: 1px solid grey;
-	width: 110px;
-	height: 30px;
-	padding: 3px;
-	border-radius: 4px;
-	margin: 5px 10px;
-}
 .info_description{
-	border: 3px dotted grey;
-	border-radius: 4px;
 	padding: 5px;
-}
-#info_icons{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 15px;
-
-}
-.info_icons {
-	display: flex;
-	flex-wrap: wrap;
 }
 #posted_info{
 	/*border: 1px solid red;*/
 	margin-bottom: 5px;
 	display: flex;
-	flex-direction: row;
-}
-.info_block_left, .info_block_right{
-	display: flex;
 	flex-direction: column;
-}
-.info_block_right{
-	margin-left: 75px;
-}
-.info_block_right strong{
 	color: dimgray;
-}
-.info_block_right h4 strong{
-	color: red;	
 }
 .info_footer{
 	display: flex;
 	flex-direction: row;
-	/*justify-content: space-around;*/
+	justify-content: space-between;
+	margin-top: 15px;	
+	/*border: 1px solid red;*/
 }
 .info_footer a{
-	margin: 0 15px;
 	text-decoration: none;
-}
-.info_icons a{
-	text-decoration: none;
-}
-.info_footer a:hover{
-	font-weight: 700;
-	color: red;
+	color: dimgray;
 	cursor: pointer;
 }
-.info_icons div:hover{
-	background-color: azure;
-	cursor: pointer;
-	border: 2px solid blue;
+.info_footer a > span{
+	padding: 0 5px;
+}
+.info_footer a:nth-child(n+3) > img{
+	padding-top: 5px;
+}
+@media (max-width: 1150px){
+.info_footer{
+	flex-wrap: wrap;
+	}	
+} 
+
+@media (max-width: 900px){
+#posted {
+	flex-direction: column;
+	align-items: center;
+	}
+.posted_info{
+	padding: 0 20px;
+	}	
+} 
+@media (max-width: 600px){
+.info_footer{
+	flex-direction: column;
+	align-items: center;
+	/*padding-left: 60px;*/
+ 	}
+.info_footer a{
+	padding-top: 15px;
+
+	}
 }

@@ -44,7 +44,6 @@ import { Component, OnInit } from '@angular/core';
 			color: #333;
 		}
 
-		
 		nav.navbar.navbar-default {
 			margin: 0;
 			border: none;
