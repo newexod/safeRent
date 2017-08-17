@@ -57,7 +57,7 @@ export class Popular{
 	{name: "Гестхаус на Малиновского", adress: "Одесса, Малиновского, 7", price: 950, square: 61, bed: 2, tv: 1, balcony: 1, floor: 16, link: "../../assets/kvart20.jpg"}
 	];
 
-	apart: any[]=this.inputApart.slice(1,4);
+	apart: any[]=this.inputApart.slice(1,5);
 
 	getData(){ 
 		return this.apart=this.inputApart;

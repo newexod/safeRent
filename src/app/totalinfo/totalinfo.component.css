@@ -19,7 +19,7 @@ body {
 	background-image: url(../../assets/image5.png);
 	background-size: cover;
 	margin-bottom: 60px;
-	justify-content: space-around;
+	justify-content: space-between;
 
 }
 .info_block{

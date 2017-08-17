@@ -31,12 +31,12 @@ body {
 	margin: 15px;
 }
 .content_pro{
-	max-width: 1300px;
+	max-width: 1600px;
 	min-width: 320px;
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	align-content: space-around;
 }

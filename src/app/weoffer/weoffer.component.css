@@ -39,7 +39,7 @@ body {
 	max-width: 1600px;
 	min-width: 320px;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	align-content: space-around;
 
