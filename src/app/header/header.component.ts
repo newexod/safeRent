@@ -100,7 +100,7 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			margin-right: 30px;
 		}
 		.header_icons:first-child {
-			width: 40px;
+			// width: 40px;
 		}
 		p, a {
 			color: #333;
@@ -141,6 +141,9 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			margin-bottom: -5px;
 		}
 		@media (max-width: 767px) {
+			.header_icons:last-child {
+			    width: 250px;
+			}
 			.header_icons a {
 				margin-right: -185px;
 			}
@@ -150,10 +153,23 @@ import { RegistrationBlockComponent } from './registration-block.component';
 		}
 		@media (max-width: 500px) {
 			.header_icons a {
-				margin-right: -85px;
+				margin-right: -100px;
 			}
 			.header_icons nav a {
-				margin-right: -40px;
+				margin-right: -70px;
+			}
+		}
+		@media (max-width: 410px) {
+			.header_icons a {
+				// font-size: 12px;
+			}
+		}
+		@media(max-width: 380px) {
+			.header_icons a {
+				margin-right: -50px;
+			}
+			.header_icons nav a {
+				margin-right: -50px;
 			}
 		}
   	`],

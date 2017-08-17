@@ -17,7 +17,11 @@ import { Component, OnInit, Input, Output } from '@angular/core';
       padding: 0 5px;
     }
     
-
+	@media(max-width: 380px) {
+		a {
+		  padding: 0 1px;
+		}
+	}
     `],
 })
 export class SocialLinksComponent implements OnInit {
