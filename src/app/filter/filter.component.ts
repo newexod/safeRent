@@ -68,7 +68,7 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 						<label>Квартиры посуточно</label>
 						<input type="checkbox" class="qwe">
 						<label>Квартиры с почасовой оплатой</label>
-						<button type="submit" class="btn">Найти</button>
+						<button type="submit" class="btn">НАЙТИ</button>
 					</div>
 				</form>
 
@@ -107,7 +107,7 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 			    align-content: space-around;
 			}
 			form {
-				border-radius: 5px;
+				
 				padding: 20px 0 20px 180px;
 				background-color: white;
 				margin-bottom: 65px;
@@ -125,6 +125,7 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 			}
 			.square > input {
 				padding: 6px 0;
+				padding-left: 10px;
 			}
 			.type > label {
 				text-transform: none;
