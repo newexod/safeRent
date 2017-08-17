@@ -27,8 +27,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding-top: 30px;
-	margin: 10px 15px;
+/*	padding-top: 15px;*/
+	margin: 15px;
 }
 .content_pro{
 	max-width: 1300px;
@@ -159,23 +159,24 @@ body {
 	font: bold;
 	text-decoration: none;
 }
-.content_more a:hover{
+/*.content_more a:hover{
 	color: red;
 	font-weight: 700;
-}
+}*/
 .offer_btn{
-	background-color: orange;
+	background-color: #F39C12;
 	color: white;
 	cursor: pointer;
-	height: 30px;
+	height: 40px;
 	width: 160px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	margin: 55px 0 20px 0;
+	border: none;
 
 }
-.offer_btn:hover{
+/*.offer_btn:hover{
 	color: blue;
 	border: 2px solid blue;
 	font-weight: 800;
-}
+}*/
 

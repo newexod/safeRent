@@ -44,10 +44,7 @@ import { Component, OnInit } from '@angular/core';
 			color: #333;
 		}
 
-		nav ul li a:hover {
-			background-color: #ff0000;
-			color: white;
-		}
+		
 		nav.navbar.navbar-default {
 			margin: 0;
 			border: none;

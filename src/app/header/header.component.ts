@@ -96,10 +96,11 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-			width: 320px;
+			width: 170px;
+			margin-right: 30px;
 		}
 		.header_icons:first-child {
-			width: 150px;
+			width: 40px;
 		}
 		p, a {
 			color: #333;
