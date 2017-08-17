@@ -4,31 +4,30 @@ import { Component, OnInit } from '@angular/core';
   selector: 'navigation',
   template: 
   	`	
-  		<nav class="navbar navbar-default">
-  		  <div class="container-fluid">
-  		    <!-- Brand and toggle get grouped for better mobile display -->
-  		    <div class="navbar-header">
-  		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-  		        <span class="sr-only">Toggle navigation</span>
-  		        <span class="icon-bar"></span>
-  		        <span class="icon-bar"></span>
-  		        <span class="icon-bar"></span>
-  		      </button>
-  		      <a class="navbar-brand" href="#">SAFE-RENT</a>
-  		    </div>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">SAFE-RENT</a>
+		    </div>
 
-  		    <!-- Collect the nav links, forms, and other content for toggling -->
-  		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  		      <ul class="nav navbar-nav navbar-right">
-  		        <li><a routerLink="/">ГЛАВНАЯ</a></li>
-  		        <li><a routerLink="/profile">ПРОФИЛЬ</a></li>
-  		        <li><a routerLink="/about-us">О НАС</a></li>
-  		        <li><a routerLink="/contacts">КОНТАКТЫ</a></li>
-  		      </ul>
-  		    </div><!-- /.navbar-collapse -->
-  		  </div><!-- /.container-fluid -->
-  		</nav>
-		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a routerLink="/">ГЛАВНАЯ</a></li>
+		        <li><a routerLink="/profile">ПРОФИЛЬ</a></li>
+		        <li><a routerLink="/about-us">О НАС</a></li>
+		        <li><a routerLink="/contacts">КОНТАКТЫ</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
   	`,
   styles: 
   	[`
@@ -51,11 +50,61 @@ import { Component, OnInit } from '@angular/core';
 			border-color: white;
 		}
 		.navbar-brand {
-			padding: 23px 15px;
+			padding: 23px 25px;
 		}
 		@media (max-width: 767px) {
 			.navbar-brand {
-				padding: 15px 15px;
+				padding: 15px 25px;
+			}
+			.navbar-toggle {
+				margin-right: 30px;
+			}
+		}
+		@media (max-width: 450px) {
+			.navbar-brand {
+				padding: 15px 20px;
+			}
+		}
+		@media (max-width: 480px) {
+			.navbar-toggle {
+			    margin-right: 25px;
+			}
+		}
+		@media (max-width: 430px) {
+			.navbar-toggle {
+			    margin-right: 21px;
+			}
+			
+				padding: 15px 16px;
+			}
+		}
+		@media (max-width: 400px) {
+			.navbar-toggle {
+			    margin-right: 16px;
+			}
+			.navbar-brand {
+				padding: 15px 8px;
+			}
+		}
+		@media (max-width: 380px) {
+			.navbar-brand {
+				padding: 15px 17px;
+			}
+		}
+		@media (max-width: 350px) {
+			.navbar-toggle {
+			    margin-right: 11px;
+			}
+			.navbar-brand {
+				padding: 15px 12px;
+			}
+		}
+		@media (max-width: 330px) {
+			.navbar-toggle {
+			    margin-right: 7px;
+			}
+			.navbar-brand {
+				padding: 15px 7px;
 			}
 		}
   	`]

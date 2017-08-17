@@ -78,17 +78,17 @@ import { RegistrationBlockComponent } from './registration-block.component';
   	`,
   	styles: 
   	[`
-  	.header {
-  		display: flex;
-  		justify-content: space-between;
-  		padding-top: 15px;
-  	}
-  	nav a {
-  		margin-right: 20px;
-  	}
-  	nav a:last-child {
-  		margin-right: 0;
-  	}
+	  	.header {
+	  		display: flex;
+	  		justify-content: space-between;
+	  		padding-top: 15px;
+	  	}
+	  	nav a {
+	  		margin-right: 20px;
+	  	}
+	  	nav a:last-child {
+	  		margin-right: 0;
+	  	}
 		a {
 			cursor: pointer;
 		}
@@ -119,16 +119,20 @@ import { RegistrationBlockComponent } from './registration-block.component';
 		}
 		.modal .modal-dialog .modal-content .modal-body .form-horizontal .form-group label a {
 			color: #F39C12;
+			padding-top: 4px;
 		}
 		.modal .modal-dialog .modal-content .modal-footer a {
 			text-transform: initial;
 			color: #F39C12;
-			margin-right: 320px;
 		}
-		.modal-footer {
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
+		.modal-footer a {
+			float: left;
+			padding-top: 6px;
+		}
+		.modal-footer a::after {
+			content: '';
+			display: table;
+			clear: both;
 		}
 		.btn-primary {
 			background-color: #F39C12;
@@ -150,6 +154,17 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			.header_icons nav a {
 				margin-right: -100px;
 			}
+			.modal-dialog {
+				width: 95%;
+			}
+			.header_icons .modal-dialog a {
+				margin-right: 0;
+			}
+		}
+		@media (max-width: 600px) {
+			.modal-dialog {
+				width: 94%;
+			}
 		}
 		@media (max-width: 500px) {
 			.header_icons a {
@@ -157,6 +172,11 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			}
 			.header_icons nav a {
 				margin-right: -70px;
+			}
+		}
+		@media (max-width: 450px) {
+			.modal-dialog {
+				width: 93%;
 			}
 		}
 		@media (max-width: 410px) {
@@ -170,6 +190,9 @@ import { RegistrationBlockComponent } from './registration-block.component';
 			}
 			.header_icons nav a {
 				margin-right: -50px;
+			}
+			.modal-dialog {
+				width: 92%;
 			}
 		}
   	`],
