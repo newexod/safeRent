@@ -59,7 +59,6 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 				          (onFinish)="myOnFinish($event)" class="add_width">
 						</ion-range-slider>			  
 					</div>
-
 					<div class="col-md-12 form-group type">
 						<label for="type">Тип</label>
 						<input type="checkbox" class="qwe">
@@ -71,8 +70,6 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 						<button type="submit" class="btn">НАЙТИ</button>
 					</div>
 				</form>
-
-
 			</div>
 			
 				
@@ -180,6 +177,37 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 					padding: 20px 0 20px 0;
 				}
 			}
+			@media (max-width: 1490px) {
+				.btn {
+					margin-left: 275px;
+				}
+			}
+			@media (max-width: 1390px) {
+				.btn {
+					margin-left: 225px;
+				}
+			}
+			@media (max-width: 1300px) {
+				.btn {
+					margin-left: 155px;
+				}
+			}
+			@media (max-width: 1200px) {
+				.btn {
+					margin-left: 100px;
+				}
+			}
+			@media (max-width: 1200px) {
+				form {
+					padding: 20px 80px 20px 70px;
+				}
+			}
+			@media (max-width: 1131px) {
+				form {
+					padding: 20px 50px 20px 50px;
+				}
+			}
+
 		`]
 
 		// на всякий случай

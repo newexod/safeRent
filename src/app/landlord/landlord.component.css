@@ -526,3 +526,9 @@ select{
 
 }
 }
+
+@media (max-width: 400px) {
+	#offer h2{
+		text-align: center;
+	}
+}
