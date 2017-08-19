@@ -33,3 +33,13 @@ body {
 .info_block p{
 	font-size: 20px;
 }
+
+@media (max-width: 400px) {
+	
+	#total_info{
+		flex-direction: column;
+		align-items: center;	
+		justify-content: space-between;
+
+	}
+}

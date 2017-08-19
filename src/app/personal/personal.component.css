@@ -51,10 +51,10 @@ body {
 	color: black;
 	text-decoration-line: none;
 }
-.first_img a:hover{
+/*.first_img a:hover{
 	color: red;
 	font-weight: 700;
-}
+}*/
 .margin_top{
 	margin-top: 15px;
 }
@@ -294,13 +294,12 @@ body {
 	height: 30px;
 	width: 250px;
 	margin: 50px 130px 0 50px;
-	cursor: pointer;
-	border-radius: 5px;
+	background-color: #F39C12;
+	border: none;
+	color: white;
 }
 .comment_confirm:hover{
-	border: 3px solid blue;
-	color: blue;
-	font-weight: 700;
+	cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -408,6 +407,9 @@ body {
 	text-align: center;
 }
 .margin_top3{
+	text-align: center;
+}
+.first_part {
 	text-align: center;
 }
 }
