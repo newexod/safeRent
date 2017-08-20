@@ -45,6 +45,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { Postedapartuser } from './postedapartuser/postedapartuser.component';
 import { IonRangeSliderModule } from "ng2-ion-range-slider";
+import {RatingModule} from "ngx-rating";
+
 
 @NgModule({
   declarations: [
@@ -81,6 +83,8 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
     ModalModule.forRoot(),
     BootstrapModalModule,
     IonRangeSliderModule,
+    RatingModule,
+    FormsModule,
     AgmCoreModule.forRoot({
         apiKey: 'AIzaSyA9gkB5Ji1Ig7pHwwXIXEm4ABc7jOC9C9Y'
     })

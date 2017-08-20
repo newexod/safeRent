@@ -64,7 +64,7 @@
                             <div class="content3"><img src="./assets/Group_bad.svg"> {{item.balcony}} балкон</div>
                             <div class="content3 add2"><img src="./assets/Group_bad.svg"> {{item.floor}} этаж</div>
                         </div>
-                        <img src="./assets/zzzz.jpg" class="content_img">
+                        <rating [(ngModel)]="starsCount" class="stars_add"></rating>
                         <div class="divider3"></div>
                         <div class="content_more"><a routerLink="/poster">ПОДРОБНЕЕ</a></div>
                     </div>
@@ -93,7 +93,7 @@
                             <div class="content3"><img src="./assets/Group_bad.svg"> {{item.balcony}} балкон</div>
                             <div class="content3 add2"><img src="./assets/Group_bad.svg"> {{item.floor}} этаж</div>
                         </div>
-                        <img src="./assets/zzzz.jpg" class="content_img">
+                        <rating [(ngModel)]="starsCount" class="stars_add"></rating>
                         <div class="divider3"></div>
                         <div class="content_more"><a routerLink="/posterUser">ПОДРОБНЕЕ</a></div>
                     </div>
