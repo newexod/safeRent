@@ -10,7 +10,8 @@ import { Postedapart } from '../postedapart/postedapart.component';
 	selector: 'main',
 	template:
 		`
-			<filter></filter>			
+			<filter></filter>
+			<filter2-root></filter2-root>			
 			<popular-root></popular-root>
 			<weoffer-root></weoffer-root>
 			<area-root></area-root>
