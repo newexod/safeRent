@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IonRangeSliderModule } from "ng2-ion-range-slider";
 
+
+
 @Component({
 	selector: 'filter',
 	template:
@@ -71,6 +73,7 @@ import { IonRangeSliderModule } from "ng2-ion-range-slider";
 					</div>
 				</form>
 			</div>
+			
 			
 				
 
@@ -229,4 +232,6 @@ export class FilterComponent implements OnInit {
 	filter = {
 		link: "../../assets/image.png"
 	}
+
+
 }

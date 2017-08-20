@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 
 
+
 @Component({
   selector: 'landlord-root',
   templateUrl: 'landlord.component.html', 

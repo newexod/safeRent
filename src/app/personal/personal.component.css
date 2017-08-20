@@ -7,6 +7,9 @@ body {
 
 /*css for personal info*/
 
+.stars_add{
+	padding-left: 5px;
+}
 #block_personal{
 	max-width: 1600px;
 	min-width: 320px;
