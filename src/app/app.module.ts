@@ -18,6 +18,7 @@ import { FilterComponent } from './filter/filter.component';
 import { FooterModule } from './footer/footer.module';
 import { WeofferModule } from './weoffer/weoffer.module';
 import { PopularModule } from './popular/popular.module';
+import { Filter2 } from './filter2/filter2.component';
 
 // routing
 import { RoutingModule } from './routing/routing.module';
@@ -66,7 +67,8 @@ import {RatingModule} from "ngx-rating";
     Postedapart,
     EditInfoComponent,
     ContactsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    Filter2
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,52 @@
+<form class="col-md-10 form-inline form_props">
+    <div class="filter_header">
+        <div class="col-md-3 form-group ">
+            <label for="region" class="add_uppercase  ">Район</label>
+            <select name="form-control" id="region" class="form-control" required>
+                <option value="Киевский">Киевский</option>
+                <option value="Малиновский">Малиновский</option>
+                <option value="Коминтерновский">Коминтерновский</option>
+                <option value="Приморский">Приморский</option>
+                <option value="Суворовский">Суворовский</option>
+            </select>
+        </div>
+        <div class="col-md-2 form-group ">
+            <label for="rooms" class="add_uppercase ">Комнат</label>
+            <select name="form-control" id="rooms" class="form-control" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="col-md-3 form-group ">
+            <label for="square" class="add_uppercase ">Площадь</label>
+            <input id="square" class="form-control" type="number" min="0" max="25" step="1" placeholder="От" />
+            - 
+            <input id="square" class="form-control" type="number" min="35" max="100" step="1" placeholder="До">
+        </div>
+        <div class="slider_width ">
+            <label for="price">ЦЕНА</label>             
+            <ion-range-slider #sliderElement type="double" min="0" max="30000" step="100" from_min="0" from_max="30000"      from_shadow="false" to="0" to_min="18000" to_max="30000" to_shadow="false" prefix="" postfix=" грн."         decorate_both="false" (onUpdate)="myOnUpdate($event)" (onChange)="myOnChange($event)" 
+            (onFinish)="myOnFinish($event)" class="add_width"> 
+            </ion-range-slider>           
+        </div>
+    </div>
+    <div class="col-md-12 filter_footer">
+        <label for="type" class="add_uppercase">Тип</label>
+        <div class="add_footerstyle">
+            <input type="checkbox" class="qwe">
+            <label class="add_textstyle">Долгосрочная аренда квартир</label>
+        </div>
+        <div class="add_footerstyle">
+            <input type="checkbox" class="qwe">
+            <label class="add_textstyle">Квартиры посуточно</label>
+        </div>
+        <div class="add_footerstyle">
+            <input type="checkbox" class="qwe">
+            <label class="add_textstyle">Квартиры с почасовой оплатой</label>
+        </div>
+        <button type="submit" class="btn">НАЙТИ</button>
+    </div>
+</form>
+ 

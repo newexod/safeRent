@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+}
+.form_add {			
+	background-color: white;
+}
+.filter_header{
+	max-width: 1593px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 120px;
+}
+.filter_footer{
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 25px 120px;
+
+}
+.form_props{			
+	max-width: 1593px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.slider_width{
+	width:300px;
+	display: flex;
+	justify-content: space-between; 
+}
+.add_width{
+	min-width: 240px; 
+}
+.add_uppercase {
+	text-transform: uppercase;
+}
+.slider_width label{
+	padding-top: 10px;
+}
+.add_margin{
+	margin-top: 13px;
+}
+.btn {
+	background-color: #F39C12;
+	padding: 8px 30px;
+	color: white;
+	margin-left: 325px;
+}
+.qwe{
+	transform:scale(1.7);
+  	opacity:0.9;
+  	cursor:pointer;
+  	margin-left: 20px;
+}
+.border{
+	border: 1px solid red;
+}
+.add_textstyle{
+	padding: 0 0 0 5px;
+	font-weight: 400;
+}
+
+@media (max-width: 1500px) {
+	.filter_header{
+		padding: 25px 80px;
+	}
+}
+@media (max-width: 1400px) {
+	.filter_header{
+		padding: 25px 40px;
+	}
+}			
+@media (max-width: 1320px) {
+	.filter_header{
+		padding: 25px 0;
+		flex-direction: column;
+		align-items: center;
+		height: 300px;
+	}
+	.slider_width{
+		padding-left: 6px;
+	}
+
+	.form-group{
+		width: 100%;
+		max-width: 320px;
+	}
+}
+
+			
+@media (max-width: 1390px) {
+	.btn {
+		margin-left: 155px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.btn {
+		margin-left: 45px;
+	}
+	.filter_footer{
+		padding: 25px 40px;
+
+	}
+}
+@media (max-width: 1420px) {
+	.add_textstyle{
+		padding-left: 5px;
+	}
+}
+
+@media (max-width: 1155px) {
+	.btn {
+		margin-top: 10px;
+		
+	}
+}
+@media (max-width: 775px) {
+	.filter_header{
+		height: 400px;
+	}
+	
+}
+@media (max-width: 984px) {
+		
+}
+@media (max-width: 812px) {
+	.filter_footer{
+		padding: 25px 2px;
+
+	}
+}
+@media (max-width: 736px) {
+	.filter_footer{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+	}
+	.add_footerstyle{
+		display: flex;
+		flex-direction: row;
+		text-align: left;
+		width: 300px;
+		padding: 3px 0;
+	}
+	.btn {
+		margin-left: 15px;
+
+	}
+}
