@@ -8,10 +8,8 @@
         <div class="content_pro">
             <div *ngFor="let item of apart"  class="popular_block">
                 <div class="block_props">
-
                     <div id="content_check"><a routerLink="/poster"><img src="{{item.link}}" class="popular_img"></a></div>
                    <!--  <div class="popular_button"><a href="#">ПОДРОБНЕЕ</a></div> -->
-
                     <div class="popular_content">
                         <div class="content1"><p class="content_class1">{{item.name}}</p><p class="content_class2">{{item.price}} грн.</p></div>
                     </div>
@@ -27,11 +25,11 @@
                         <div class="content3"><img src="./assets/Group_bad.svg"> {{item.balcony}} балкон</div>
                         <div class="content3 add2"><img src="./assets/Group_bad.svg"> {{item.floor}} этаж</div>
                     </div>
-                    <rating [(ngModel)]="starsCount" class="stars_add"></rating>
+                    <rating [(ngModel)]="item.starsCount" class="stars_add"></rating>
                     <div class="divider3"></div>
                     <div class="content_more"><a routerLink="/poster">ПОДРОБНЕЕ</a></div>
                 </div>
             </div>
        </div>
-       <button type="button" class="offer_btn" (click)="getData()">ПОСМОТРЕТЬ ВСЕ</button> 
+       <button type="button" class="offer_btn" (click)="getData()" *ngIf="isCheck">ПОСМОТРЕТЬ ВСЕ</button> 
 </div>
