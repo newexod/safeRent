@@ -2,8 +2,6 @@ import { Component} from '@angular/core';
 import { Injectable} from '@angular/core';
 import { Http} from '@angular/http';
 import 'rxjs/add/operator/map';
-import {RatingModule} from "ngx-rating";
-
 
 
 @Component({
@@ -60,8 +58,17 @@ export class Popular{
 
 	apart: any[]=this.inputApart.slice(1,5);
 
+	isCheck: boolean = true;
+
 	getData(){ 
+		this.isCheck = !this.isCheck;
 		return this.apart=this.inputApart;
-   	}   	
+   	}   
+
+   	starsCount: number;	
+
+   	 constructor(){
+        this.starsCount = this.starsCount;
+    }
 
 }
