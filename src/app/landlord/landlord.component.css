@@ -53,11 +53,9 @@ body {
 	border: none;
 	text-transform: uppercase;
 }
-/*.impost button:hover{
-	color: blue;
-	border: 2px solid blue;
-	font-weight: 800;
-}*/
+.impost button:hover{
+	background-color: #ff9c00;
+}
 .impost a{
 	color: white;
 	text-decoration: none;

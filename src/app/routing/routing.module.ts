@@ -51,8 +51,8 @@ const routes: Routes = [
 	{
 		path: 'poster',
 		component: Postedapart
-  },
-  {
+	},
+	{
 		path: 'contacts',
 		component: ContactsComponent
 	},

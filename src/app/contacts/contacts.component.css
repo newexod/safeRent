@@ -1,0 +1,18 @@
+agm-map {
+  height: 500px;
+}
+h3 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+p {
+	text-align: center;
+	font-size: 18px;
+}
+.logo-hillel {
+	margin-bottom: 30px;
+}
+.col-md-12 {
+	background-color: #f0f0f0;
+	padding: 0;
+}

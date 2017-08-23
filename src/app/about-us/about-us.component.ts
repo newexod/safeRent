@@ -2,38 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'about-us',
-	template:
-		`
-			<div class="about">
-				<h2>О нас</h2>
-				<ul>
-					<li *ngFor="let about of about">
-						{{about}}
-					</li>
-				</ul>
-			</div>
-		`,
-		styles: [`
-			.about {
-				background-color: #f0f0f0;
-			}
-			ul {
-				margin: 0;
-				list-style: none;
-				padding-right: 40px;
-			}
-			li {
-				padding-bottom: 15px;
-				font-size: 16px;
-			}
-			h2 {
-				margin-top: 0;
-				padding-top: 20px;
-				margin-bottom: 20px;
-				font-size: 24px;
-				text-align: center;
-			}
-		`]
+	templateUrl: 'about-us.component.html',
+	styleUrls: ['about-us.component.css']
 })
 
 export class AboutUsComponent {

@@ -8,7 +8,6 @@ import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './header/header.component';
-// import { UserBlockComponent } from './header/user-block.component';
 import { SocialLinksComponent } from './header/social-links.component';
 import { RegistrationBlockComponent } from './header/registration-block.component';
 
@@ -27,7 +26,6 @@ import { RouterModule } from '@angular/router';
 //popup
 import { ModalModule } from 'angular2-modal';
 import { BootstrapModalModule } from 'angular2-modal/plugins/bootstrap';
-import { CustomModal } from './header/custom-modal-sample';
 
 //main-content
 import { MainContentComponent } from './main-content/main-content.component';
@@ -36,6 +34,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { MainInfoComponent } from './profile/main-info/main-info.component';
 import { EditInfoComponent } from './profile/edit-info/edit-info.component';
 import { ProfileComponent } from './profile/profile.component';
+
 import { AdComponent } from './ad/ad.component';
 import { PersonalModule } from './personal/personal.module';
 import { AreaModule } from './area/area.module';
@@ -54,8 +53,6 @@ import {RatingModule} from "ngx-rating";
     AppComponent,
     HeaderComponent,
     SocialLinksComponent,
-    CustomModal,//
-    // UserBlockComponent,
     RegistrationBlockComponent,
     AdComponent,
     Postedapartuser,
@@ -90,19 +87,8 @@ import {RatingModule} from "ngx-rating";
     AgmCoreModule.forRoot({
         apiKey: 'AIzaSyA9gkB5Ji1Ig7pHwwXIXEm4ABc7jOC9C9Y'
     })
-    // RouterModule.forRoot([
-    // {
-    //   path: 'registration',
-    //   component: RegistrationBlockComponent
-    // },
-    // {
-    //   path: '',
-    //   component: MainContentComponent
-    // }
-    // ])
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [ CustomModal ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
