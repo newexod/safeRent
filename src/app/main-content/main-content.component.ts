@@ -6,12 +6,14 @@ import { Weoffer } from '../weoffer/weoffer.component';
 import { Landlord } from '../landlord/landlord.component';
 import { Postedapart } from '../postedapart/postedapart.component';
 
+// <filter2-root></filter2-root>
+
 @Component({
 	selector: 'main',
 	template:
 		`
 			<filter></filter>
-			<filter2-root></filter2-root>			
+						
 			<popular-root></popular-root>
 			<weoffer-root></weoffer-root>
 			<area-root></area-root>

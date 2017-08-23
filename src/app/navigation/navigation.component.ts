@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core';
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a routerLink="/">ГЛАВНАЯ</a></li>
-		        <li><a routerLink="/profile">ПРОФИЛЬ</a></li>
+		        <!-- <li><a routerLink="/profile">ПРОФИЛЬ</a></li> -->
 		        <li><a routerLink="/about-us">О НАС</a></li>
 		        <li><a routerLink="/contacts">КОНТАКТЫ</a></li>
 		      </ul>

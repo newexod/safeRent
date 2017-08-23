@@ -3,7 +3,7 @@
 }
 body {
 	margin: 0 auto;
-} 
+}
 .display{
 	display: none;
 }
@@ -16,21 +16,18 @@ body {
 	padding: 100px 0;
 	background-image: url(http://malahit-pansionat.ru/images/main/malahit_nomera2_1600px.jpg);
 	background-size: cover;
-	align-items: center;
-	position: relative;
-
+	display: flex;
+	justify-content: center;
 }
 .ad_create{
 	background-color: white;
+    margin-bottom: -58px;
 	width: 400px;
 	height: 60px;
-/*	border: 1px solid red;*/
+	// border: 1px solid red;
 	text-align: center;
- 	bottom: 30px;
- 	right: 610px;
- 	position: absolute; 
+ 	// position: absolute; 
  	vertical-align: middle;
- 	
 }
 #ad_propose{
 	max-width: 1600px;
@@ -52,7 +49,7 @@ body {
 }
 .wrapper_advert{
 	margin: 0 auto;
-	width: 1600px;
+	// width: 1600px;
 	padding: 10px 0 40px 0;
 }
 .headline_property{
@@ -141,6 +138,7 @@ select{
 	border: 2px solid #d1d1d1;
 	border-radius: 4px
 }
+
 .period_property{
 	margin-bottom: 15px;
 	padding-left: 28px;
@@ -206,7 +204,7 @@ select{
  	
 } 
 .wrapper_advert{
-	width: 1400px;
+	// width: 1400px;
 	
 }
 }
@@ -216,7 +214,7 @@ select{
  	
 } 
 .wrapper_advert{
-	width: 1200px;
+	// width: 1200px;
 	
 }
 }
@@ -226,7 +224,7 @@ select{
  	
 } 
 .wrapper_advert{
-	width: 1000px;
+	// width: 1000px;
 	
 }
 }
@@ -236,7 +234,7 @@ select{
  	
 } 
 .wrapper_advert{
-	width: 850px;
+	// width: 850px;
 	
 }
 }
@@ -246,7 +244,7 @@ select{
  	
 } 
 .wrapper_advert{
-	width: 700px;
+	// width: 700px;
 	margin-left: 10px;
 	
 }
@@ -274,7 +272,6 @@ select{
 } 
 .form_style{
 	width: 500px;
-	margin-left: 48px;
 	padding-left: 20px;
 }
 .wrapper_advert{
@@ -291,6 +288,9 @@ select{
 .location_props{
 	margin-left: 48px;	
 }
+.room_property {
+	margin-left: 50px;
+}
 }
 @media (max-width: 580px){
 .ad_create{
@@ -298,7 +298,6 @@ select{
 } 
 .form_style{
 	width: 400px;
-	margin-left: 18px;
 	padding-left: 0;
 }
 .wrapper_advert{
@@ -319,8 +318,7 @@ select{
 	margin:25px 30px 20px 75px; 
 }
 #ad_propose{
-	margin: 0;
-	text-align: left;
+	margin: 0 auto;
 
 }
 #headline{
@@ -339,6 +337,7 @@ select{
 .room_property{
 	display:flex;
 	flex-direction: column;
+	margin-left: 0;
 }
 .quant_room{
 	padding-left: 40px;
@@ -358,6 +357,12 @@ select{
 	flex-direction: column;
 	padding-left: 40px;
 }	
+#period_from {
+	margin-left: 11px;
+}
+#period_from, #period_to {
+	font-weight: initial;
+}
 #photo_org3{
 	margin-left: 30px;
 }
@@ -371,7 +376,7 @@ select{
 @media (max-width: 450px){
 .form_style{
 	width: 315px;
-	margin:0;
+	margin: 0 auto;
 	padding-left: 0;
 }
 
@@ -384,7 +389,6 @@ select{
 
 .form_style{
 	width: 300px;
-	margin-left: 10px;
 	padding-left: 0;
 }
 
@@ -404,14 +408,50 @@ select{
 #ad_propose{
 	text-align: center;
 }
+.headline_property {
+	padding-left: 25px;
+}
 #headline{
-	width: 220px;
+	width: 242px;
+}
+#description {
+	margin-left: 25px;
+}
+.description_props {
+	padding-left: 25px;
+}
+.location_props {
+	margin-left: 25px;
+}
+#location {
+	margin-left: 25px;
+}
+.price_property {
+	padding-left: 25px;
+}
+.price_property input {
+	width: 140px;
+}
+.quant_room {
+	padding-left: 25px;
+}
+.type_room {
+	padding-left: 25px;
+}
+.floor_property {
+	padding-left: 25px;
+}
+.period_property {
+	padding-left: 25px;
+}
+.props2 {
+	padding-left: 20px;
 }
 #description{
-	width: 220px;
+	width: 242px;
 }
 #location{
-	width: 220px;
+	width: 242px;
 }
 #price{
 	padding-left: 35px;

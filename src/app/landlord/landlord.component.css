@@ -292,7 +292,7 @@ select{
 	}
 	.circs {
 		flex-direction: column;
-		padding: 20px 50px;
+		padding: 20px 38px;
 	}
 	.circs h3 {
 		text-align: center;

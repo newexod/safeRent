@@ -111,3 +111,9 @@ body {
 		margin-left: 35px;
 	}
 }
+@media (max-width: 650px) {
+	.footer_block1 {
+		width: 242px;
+		margin-left: -24px;
+	}
+}
